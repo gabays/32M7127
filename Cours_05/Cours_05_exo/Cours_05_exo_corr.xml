@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exercice d'encodage</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Simon Gabay, UniGE</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Andromaque de Racine</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="Cours_05_exo_images/btv1b8610810z_f19.jpg"/>
+         <zone xml:id="image1_bandeau" lry="863" lrx="1693" uly="360" ulx="86"/>
+         <zone xml:id="image1_frise" lry="1663" lrx="1753" uly="1520" ulx="36"/>
+         <zone xml:id="image1_initiale" lry="3060" lrx="433" uly="2626" ulx="36"/>
+      </surface>
+      <graphic url="Cours_05_exo_images/btv1b8610810z_f20.jpg"/>
+      <graphic url="Cours_05_exo_images/btv1b8610810z_f21.jpg"/>
+   </facsimile>
+   <text>
+      <!-- 
+========== PIECE
+      -->
+      <body>
+         <div type="play">
+            <gb n="A1"/>
+            <pb n="1" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f19.image"/>
+            <fw type="pageNum" place="top-right">1</fw>
+            <figure>
+               <graphic url="#f19_bandeau"/>
+               <figDesc>Bandeau orné</figDesc>
+            </figure>
+            <head rend="center">ANDROMAQUE, <lb/><hi rend="italic">TRAGEDIE.</hi></head>
+            <figure>
+               <graphic url="#f19_frise"/>
+               <figDesc>Frise de fleurons</figDesc>
+            </figure>
+            <!-- 
+===============ACTE 1
+            -->
+            <div type="act" n="1" xml:id="A1">
+               <head rend="center">ACTE PREMIER.</head>
+               <!-- 
+===============ACTE 1
+_______________SCENE 1
+               -->
+               <div type="scene" n="1" xml:id="A1S1">
+                  <head rend="center">SCENE PREMIERE.</head>
+                  <stage>ORESTE, PYLADE.</stage>
+                  <sp who="#oreste" xml:id="A1S1_1">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="1" xml:id="v1">
+                           <figure>
+                              <graphic url="#f19_initiale"/>
+                              <figDesc>Initiale ornée</figDesc>
+                           </figure>
+                           <hi rend="initiale">O</hi>VY, <w>puis que</w> ie retrouue vn Amy ſi
+                           <lb/>fidelle,</l>
+                        <l n="2" xml:id="v2">Ma Fortune va prendre vne face nou <lb break="no"
+                              rend="-"/>uelle;</l>
+                        <l n="3" xml:id="v3">Et déja ſon courroux ſemble s'eſtre <lb/>adouci,</l>
+                        <l n="4" xml:id="v4">Depuis qu'elle a pris ſoin de nous rejoindre ici.</l>
+                        <fw type="sig">A</fw>
+                        <pb n="2" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f20.image"/>
+                        <fw type="pageNum" place="top-left">2</fw>
+                        <fw type="head" place="top-center">ANDROMAQVE</fw>
+                        <l n="5" xml:id="v5">Qui m'euſt dit, qu'vn riuage à mes vœux si funeſte,</l>
+                        <l n="6" xml:id="v6">Préſenteroit d'abord <persName ref="#pylade">Pylade</persName>
+                           aux yeux d'<persName ref="#oreste">Oreſte</persName>,</l>
+                        <l n="7" xml:id="v7">Qu'apres plus de ſix mois que ie t'auois perdu,</l>
+                        <l n="8" xml:id="v8">A la Cour de <persName ref="#pyrrhus">Pyrrhus</persName>
+                           tu me ſerois rendu!</l>
+                     </lg>
+                  </sp>
+                  <sp who="#pylade" xml:id="A1S1_2">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="9" xml:id="v9">I'en rends graces au Ciel, qui m'arreſtant ſans
+                           ceſſe,</l>
+                        <l n="10" xml:id="v10">Sembloit m'auoir fermé le chemin de la Gréce,</l>
+                        <l n="11" xml:id="v11">Depuis le jour fatal que la fureur des Eaux,</l>
+                        <l n="12" xml:id="v12">Preſque aux yeux de Mycéne, écarta nos Vaiſſeaux.</l>
+                        <l n="13" xml:id="v13">Combien dans cét exil ay-je ſouffert d'allarmes?</l>
+                        <l n="14" xml:id="v14">Combien à vos malheurs ay-je donné de larmes?</l>
+                        <l n="15" xml:id="v15">Craignant toûjours pour vous quelque nouueau
+                           <lb/>danger</l>
+                        <l n="16" xml:id="v16">Que ma triste Amitié ne pouuoit partager.</l>
+                        <l n="17" xml:id="v17">Sur tout ie redoutois cette Mélancolie</l>
+                        <l n="18" xml:id="v18">Où j'ay veu ſi <w>long-temps</w> voſtre Ame
+                           enſeuelie.</l>
+                        <l n="19" xml:id="v19">Ie craignois que le Ciel, par vn cruel ſecours,</l>
+                        <l n="20" xml:id="v20">Ne vous offrît la mort, que vous cherchiez
+                           toûjours.</l>
+                        <l n="21" xml:id="v21">Mais ie vous voy, Seigneur, &amp; ſi j'oſe le
+                           dire,</l>
+                        <l n="22" xml:id="v22">Vn Deſtin plus heureux vous conduit en <placeName
+                              ref="#epire">Epire</placeName>.</l>
+                        <l n="23" xml:id="v23">Le pompeux Appareil qui ſuit icy vos pas,</l>
+                        <l n="24" xml:id="v24">N'eſt point d'vn Malheureux qui cherche le
+                           trépas.</l>
+                     </lg>
+                  </sp>
+                  <sp who="#oreste" xml:id="A1S1_3">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="25" xml:id="v25">Helas! qui peut ſçavoir le Deſtin qui m'ameine?</l>
+                        <l n="26" xml:id="v26">L'Amour me fait icy chercher vne Inhumaine.</l>
+                        <l n="27" xml:id="v27">Mais qui ſçait ce qu'il doit ordonner de mon
+                           Sort,</l>
+                        <l n="28" xml:id="v28">Et ſi ie viens chercher, ou la vie, ou la mort?</l>
+                     </lg>
+                  </sp>
+                  <sp who="#pylade" xml:id="A1S1_4">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="29" xml:id="v29">Quoy! voſtre Ame à l'Amour, en Eſclaue aſſeruie,</l>
+                        <l n="30" xml:id="v30">Se repose ſur luy du ſoin de voſtre vie?</l>
+                        <gb n="A2"/>
+                        <pb n="3" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f21.image"/>
+                        <fw type="head" place="top-center">TRAGEDIE.</fw>
+                        <fw type="pageNum" place="top-right">3</fw>
+                        <l n="31" xml:id="v31">Par quels charmes, apres tant de tourmens
+                           soufferts</l>
+                        <l n="32" xml:id="v32">Peut-il vous inuiter à rentrer dans ſes fers?</l>
+                        <l n="33" xml:id="v33">Penſez-vous qu'<persName ref="#hermione">Hermionne</persName>,
+                           à <placeName ref="#sparte">Sparte</placeName> inéxorable,</l>
+                        <l n="34" xml:id="v34">Vous prépare en <placeName ref="#epire">Epire</placeName>
+                           vn Sort plus fauorable?</l>
+                        <l n="35" xml:id="v35">Honteux d'auoir pouſsé tant de vœux ſuperflus,</l>
+                        <l n="36" xml:id="v36">Vous l'abhorriez. Enfin, vous ne m'en parliez plus.</l>
+                        <l n="37" xml:id="v37" part="I">Vous me trompiez, Seigneur.</l>
+                     </lg>
+                  </sp>
+                  <sp who="#oreste" xml:id="A1S1_5">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="37" part="F">Ie me trompois moy-méme.</l>
+                        <l n="38" xml:id="v38">Amy, n'inſulte point vn Malheureux qui t'aime.</l>
+                        <l n="39" xml:id="v39">T'ay-je iamais caché mon cœur &amp; mes deſirs?</l>
+                        <l n="40" xml:id="v40">Tu vis naiſtre ma flâme &amp; mes premiers ſoûpirs.</l>
+                        <l n="41" xml:id="v41">Enfin, quand <persName ref="#menelas">Menelas</persName>
+                           diſpoſa de <rs ref="#hermione">ſa Fille</rs></l>
+                        <l n="42" xml:id="v42">En faueur de <persName ref="#pyrrhus">Pyrrhus</persName>,
+                           vangeur de ſa Famille;</l>
+                        <l n="43" xml:id="v43">Tu vis mon deſeſpoir, &amp; tu m’as veu depuis</l>
+                        <l n="44" xml:id="v44">Traîner de Mers en Mers ma chaîne &amp; mes ennuis.</l>
+                        <l n="45" xml:id="v45">Ie te vis à regret, en cét eſtat funeſte,</l>
+                        <l n="46" xml:id="v46">Preſt à ſuiure par tout le déplorable
+                           <persName ref="#oreste">Oreſte</persName>,</l>
+                        <l n="47" xml:id="v47">Toûjours de ma fureur interrompre le cours,</l>
+                        <l n="48" xml:id="v48">Et de moy-meſme enfin me ſauuer tous les jours.</l>
+                        <l n="49" xml:id="v49">Mais quand ie me ſouuins, que parmy tant d’al 
+                           <lb break="no" rend="-"/>larmes</l>
+                        <l n="50" xml:id="v50"><persName ref="#hermione">Hermionne</persName> à
+                              <persName ref="#pyrrhus">Pyrrhus</persName> prodiguoit tous ſes charmes,</l>
+                        <l n="51" xml:id="v51">Tu ſçais de quel courroux mon cœur alors épris</l>
+                        <l n="52" xml:id="v52">Voulut, en l’oubliant, vanger tous ſes mépris.</l>
+                        <l n="53" xml:id="v53">Ie fis croire, &amp; ie crûs ma victoire certaine.</l>
+                        <l n="54" xml:id="v54">Ie pris tous mes tranſports pour des tranſports de <lb/>haine;</l>
+                        <l n="55" xml:id="v55">Déteſtant ſes rigueurs, rabaiſſant ſes attraits,</l>
+                        <l n="56" xml:id="v56">Ie défiois ſes yeux de me troubler iamais.</l>
+                        <l n="57" xml:id="v57">Voila comme ie crûs étouffer ma tendreſſe.</l>
+                        <l n="58" xml:id="v58">Dans ce calme trompeur j’arriuay dans la Gréce;</l>
+                        <l n="59" xml:id="v59">Et ie trouuay d’abord ſes Princes raſſemblez,</l>
+                        <l n="60" xml:id="v60">Qu’vn péril aſſez grand ſembloit auoir troublez.</l>
+                        <fw type="sig">A ij</fw>
+                        <pb n="4" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f22.image"/>
+                        <fw type="pageNum" place="top-left">4</fw>
+                        <fw type="head" place="top-center">ANDROMAQVE</fw>
+                        <l n="61" xml:id="v61">I’y courus. Ie penſay que la Guerre, &amp; la Gloire,</l>
+                        <l n="62" xml:id="v62">De ſoins plus importans rempliroient ma memoire;</l>
+                        <l n="63" xml:id="v63">Que mes ſens reprenant leur premiere vigueur,</l>
+                        <l n="64" xml:id="v64">L’Amour acheueroit de ſortir de mon Cœur.</l>
+                        <l n="65" xml:id="v65">Mais admire auec moy le Sort, dont la pourſuite</l>
+                        <l n="66" xml:id="v66">Me fait courir moy-meſme au piege que j’éuite.</l>
+                        <l n="67" xml:id="v67">I’entens de tous coſtez qu’on menace Pyrrhus.</l>
+                        <l n="68" xml:id="v68">Toute la Gréce éclate en murmures confus.</l>
+                        <l n="69" xml:id="v69">On ſe plaint, qu’oubliant ſon Sang, &amp; ſa promeſſe,</l>
+                        <l n="70" xml:id="v70">Il éleue en ſa Cour l’Ennemy de la Gréce,</l>
+                        <l n="71" xml:id="v71"><persName ref="#astyanax">Aſtyanax</persName>,
+                              d'<persName ref="#hector">Hector</persName> jeune &amp; malheureux Fils,</l>
+                        <l n="72" xml:id="v72">Reſte de tant de Roys ſous <placeName ref="#troie">Troye</placeName>
+                           enſeuelis.</l>
+                        <l n="73" xml:id="v73">I’apprens, que pour rauir ſon enfance au Suplice,</l>
+                        <l n="74" xml:id="v74"><persName ref="#andromaque">Andromaque</persName>
+                           trompa l’ingénieux <persName ref="#ulysse">Vlyſſe</persName>,</l>
+                        <l n="75" xml:id="v75">Tandis qu’vn autre Enfant arraché de ſes bras,</l>
+                        <l n="76" xml:id="v76">Sous le nom de <rs ref="#astyanax">ſon Fils</rs>, fut
+                           conduit au trépas.</l>
+                        <l n="77" xml:id="v77">On dit, que peu ſenſible aux charmes d’
+                           <persName ref="#hermione">Hermionne</persName>,</l>
+                        <l n="78" xml:id="v78">Mon Riual porte ailleurs ſon Cœur &amp; ſa Couronne;</l>
+                        <l n="79" xml:id="v79"><persName ref="#menelas">Ménelas</persName>, ſans le
+                           croire, en paroiſt affligé,</l>
+                        <l n="80" xml:id="v80">Et ſe plaint d’vn Hymen ſi long-temps negligé.</l>
+                        <l n="81" xml:id="v81">Parmy les déplaiſirs où ſon Ame ſe noye,</l>
+                        <l n="82" xml:id="v82">Il s’éleue en la mienne vne ſecrette joye.</l>
+                        <l n="83" xml:id="v83">Ie triomphe; &amp; pourtant ie me flate d’abord</l>
+                        <l n="84" xml:id="v84">Que la ſeule vengeance excite ce tranſport.</l>
+                        <l n="85" xml:id="v85">Mais l’Ingrate en <choice>
+                              <abbr>mō</abbr>
+                              <expan>mon</expan>
+                           </choice> Cœur reprit bientoſt ſa place,</l>
+                        <l n="86" xml:id="v86">De mes feux mal éteints ie reconnus la trace,</l>
+                        <l n="87" xml:id="v87">Ie ſentis que ma haine alloit finir ſon cours,</l>
+                        <l n="88" xml:id="v88">Ou plûtoſt ie ſentis que ie l’aimois toûjours.</l>
+                        <l n="89" xml:id="v89">Ainſi de tous les Grecs ie brigue le ſuffrage.</l>
+                        <l n="90" xml:id="v90">On m’enuoye à <persName ref="#pyrrhus">Pyrrhus</persName>.
+                           I’entreprens ce voyage.</l>
+                        <l n="91" xml:id="v91">Ie viens voir ſi l’on peut arracher de ſes bras</l>
+                        <l n="92" xml:id="v92">Cét Enfant, dont la vie allarme tant d’Eſtats.</l>
+                        <l n="93" xml:id="v93">Heureux, ſi ie pouuois dans l’ardeur qui me preſſe,</l>
+                        <l n="94" xml:id="v94">Au lieu d’<persName ref="#astyanax">Aſtyanax</persName>,
+                           luy rauir ma Princeſſe.</l>
+                        <l n="95" xml:id="v95">Car enfin n’attens pas que mes feux redoublez,</l>
+                        <l n="96" xml:id="v96">Des périls les plus grands, puiſſent eſtre troublez.</l>
+                        <gb n="A3"/>
+                        <pb n="5" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f23.image"/>
+                        <fw type="head" place="top-center">TRAGEDIE.</fw>
+                        <fw type="pageNum" place="top-right">5</fw>
+                        <l n="97" xml:id="v97">Puis qu’apres tant d’efforts ma reſiſtance eſt vaine,</l>
+                        <l n="98" xml:id="v98">Ie me liure en aueugle au tranſport qui m’entraîne,</l>
+                        <l n="99" xml:id="v99">I’aime, ie viens chercher <persName ref="#hermione">Hermionne</persName>
+                           en ces lieux,</l>
+                        <l n="100" xml:id="v100">La fléchir, l’enleuer, ou mourir à ſes yeux.</l>
+                        <l n="101" xml:id="v101">Toy qui connois <persName ref="#pyrrhus">Pyrrhus</persName>,
+                           que penſes-tu qu’il faſſe?</l>
+                        <l n="102" xml:id="v102">Dans ſa Cour, dans ſon Cœur, dy-moy ce qui ſe <lb/>paſſe.</l>
+                        <l n="103" xml:id="v103">Mon <persName ref="#hermione">Hermionne</persName>
+                           encor le tient-elle aſſeruy?</l>
+                        <l n="104" xml:id="v104">Me rendra-t'il, <persName ref="#pylade">Pylade</persName>,
+                           vn Cœur qu’il m’a rauy?</l>
+                     </lg>
+                  </sp>
+                  <sp who="#pylade" xml:id="A1S1_6">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="105" xml:id="v105">Ie vous abuſerois, ſi i’oſois vous promettre</l>
+                        <l n="106" xml:id="v106">Qu’entre vos mains, Seigneur, il voulut la remettre.</l>
+                        <l n="107" xml:id="v107">Non, que de ſa Conqueſte il paroiſſe flaté.</l>
+                        <l n="108" xml:id="v108">Pour la Veuue d’<persName ref="#hector">Hector</persName>
+                           ſes feux ont éclaté.</l>
+                        <l n="109" xml:id="v109">Il l’aime. Mais enfin cette Veuue inhumaine</l>
+                        <l n="110" xml:id="v110">N’a payé jusqu’icy ſon amour que de haine,</l>
+                        <l n="111" xml:id="v111">Et chaque jour encore on luy voit tout tenter,</l>
+                        <l n="112" xml:id="v112">Pour fléchir ſa Captive, ou pour l’épouuanter.</l>
+                        <l n="113" xml:id="v113">Il luy cache ſon Fils, il menaſſe ſa teſte,</l>
+                        <l n="114" xml:id="v114">Et fait couler des pleurs, qu’auſſi-toſt il arreſte.</l>
+                        <l n="115" xml:id="v115"><persName ref="#hermione">Hermionne</persName> elle-meſme
+                           a veu plus de cent fois</l>
+                        <l n="116" xml:id="v116">Cet Amant irrité reuenir ſous ſes loix,</l>
+                        <l n="117" xml:id="v117">Et de ſes vœux troublez luy rapportant l’hommage,</l>
+                        <l n="118" xml:id="v118">Soûpirer à ſes pieds moins d’amour, que de rage.</l>
+                        <l n="119" xml:id="v119">Ainſi n’attendez pas, que l’on puiſſe aujourd’huy</l>
+                        <l n="120" xml:id="v120">Vous répondre d’vn Cœur, ſi peu maiſtre de luy.</l>
+                        <l n="121" xml:id="v121">Il peut, Seigneur, il peut dans ce deſordre
+                              extré<lb break="no" rend="-"/>me,</l>
+                        <l n="122" xml:id="v122">Epouſer ce qu’il hait, &amp; perdre ce qu’il aime.</l>
+                     </lg>
+                  </sp>
+                  <sp who="#oreste" xml:id="A1S1_7">
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="123" xml:id="v123">Mais dy-moy, de quel œil <persName ref="#hermione">Hermionne</persName>
+                           peut voir</l>
+                        <l n="124" xml:id="v124">Ses attraits offenſez, &amp; ſes yeux ſans pouuoir.</l>
+                     </lg>
+                  </sp>
+                  <fw type="sig">A iij</fw>
+                  <pb n="6" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f24.image"/>
+                  <fw type="pageNum" place="top-left">6</fw>
+                  <fw type="head" place="top-center">ANDROMAQVE</fw>
+                  <sp who="#pylade" xml:id="A1S1_8">
+                     <speaker>PYLDADE.</speaker>
+                     <lg>
+                        <l n="125" xml:id="v125"><persName ref="#hermione">Hermionne</persName>,
+                           Seigneur, au moins eu apparance,</l>
+                        <l n="126" xml:id="v126">Semble de ſon Amant dédaigner l’inconſtance,</l>
+                        <l n="127" xml:id="v127">Et croit que trop heureux d’appaiſer ſa rigueur,</l>
+                        <l n="128" xml:id="v128">Il la viendra preſſer de reprendre ſon Cœur.</l>
+                        <l n="129" xml:id="v129">Mais ie l’ay veuë enfin me confier ſes larmes.</l>
+                        <l n="130" xml:id="v130">Elle pleure en ſecret le mépris de ſes charmes.</l>
+                        <l n="131" xml:id="v131">Toûjours preſte à partir, &amp; demeurant toûjours,</l>
+                        <l n="132" xml:id="v132">Quelquefois elle appelle Oreſte à ſon ſecours.</l>
+                     </lg>
+                  </sp>
+                  <sp who="#oreste" xml:id="A1S1_9">
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="133" xml:id="v133">Ah! ſi ie le croyois, i’irois bientoſt,
+                           <persName ref="#pylade">Pylade</persName>,</l>
+                        <l n="134" xml:id="v134" part="I">Me jetter…</l>
+                     </lg>
+                  </sp>
+                  <sp who="#pylade" xml:id="A1S1_10">
+                     <speaker>PYLADE.</speaker>
+                     <lg>
+                        <l n="134" part="F">Acheuez, Seigneur, voſtre Ambaſſade.</l>
+                        <l n="135" xml:id="v135">Vous attendez le Roy. Parlez, &amp; lui montrez</l>
+                        <l n="136" xml:id="v136">Contre le Fils d’<persName>Hector</persName> tous
+                           les Grecs conjurez.</l>
+                        <l n="137" xml:id="v137">Loin de leur accorder ce Fils de ſa Maiſtreſſe,</l>
+                        <l n="138" xml:id="v138">Leur haine ne fera qu’irriter ſa tendreſſe.</l>
+                        <l n="139" xml:id="v139">Plus on les veut broüiller, plus on va les vnir.</l>
+                        <l n="140" xml:id="v140">Preſſez. Demandez tout, pour ne rien obtenir.</l>
+                        <l n="141" xml:id="v141" part="I">Il vient.</l>
+                     </lg>
+                  </sp>
+                  <sp who="#oreste" xml:id="A1S1_11">
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="141" part="F">Hé bien, va donc diſpoſer la Cruelle</l>
+                        <l n="142" xml:id="v142">A reuoir vn Amant qui ne vient que pour elle.</l>
+                     </lg>
+                  </sp>
+                  <figure>
+                     <desc>cule-de-lampe</desc>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
