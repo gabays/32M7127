@@ -4,7 +4,7 @@ Formation Edition numérique
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="../Cours_02_images/cc-by.png">
+<img style="float: right; width: 20%;" src="../Cours_02_images/cc-by-sa.png">
 
 ---
 ## Exercice 1: un premier document en XML
@@ -70,13 +70,13 @@ Plein du venin dont il fault que ie meure.
 
 Ouvrez l'image `TEI_1.jpg` ([ici](https://github.com/gabays/Cours_Edition_Geneve/blob/master/Cours_02/Cours_02_exo/Cours_02_exo.jpg))
 
-Modélisez l'information que vous avez sous les yeux.
+Modélisez l'information que vous avez sous les yeux (pensez au détails: images, abréviations, retours à la ligne. . .)
 * Que voyez-vous?
 * Comment l'éditeriez-vous?
 * Qu'encoderiez-vous?
 * Comment l'encoderiez-vous?
 
-Recommcez l'exercice 1, mais en encodant cette fois le poème. Vous trouverez une transcription [ici](https://github.com/gabays/Cours_Edition_Geneve/blob/master/Cours_02/Cours_02_exo/Cours_02_exo_text.md).
+Recommencez l'exercice 1, mais en encodant cette fois le poème. Vous trouverez une transcription [ici](https://github.com/gabays/Cours_Edition_Geneve/blob/master/Cours_02/Cours_02_exo/Cours_02_exo_text.md).
 
 ---
 
