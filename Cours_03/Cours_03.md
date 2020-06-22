@@ -123,6 +123,26 @@ On reproduit cette logique pour tous les types:
   </div>
 </div>
 ```
+---
+### Les commentaires
+
+Parfois on a besoin de laisser les notes dans le texte, qui n'ont tien à voir avec l'édition: jusqu'où la transcription a été relue, revenir un problème… Il est possible de laisser de telles notes: on parle de commentaire – la bonne pratique étant de commenter son code, c'est-à-dire ses choix, directement dans le code. On ne le fait pas avec un élément précis, mais avec une utilisation spéciale des chevrons: `<!--` pour ouvrir, et `-->` pour fermer. 
+
+```XML
+<lg n="1" type="quatrain">
+  <l n="1">Qui voudra voir une ieuneſſe prompte</l>
+  <l n="2">A ſuivre en vain l'obiect de ſon malheur,</l>
+  <l n="3">Me vienne voir: Il voirra ma douleur,</l>
+  <l n="4">Et la rigueur de l'Archer qui me donte.</l>
+</lg>
+<!-- Penser à numéroter les vers -->
+<lg n="2" type="tercet">
+  <l>Il cognoistra combien la raiſon peult</l>
+  <l>Contre ſon arc, quand vne fois il veult</l>
+  <l>Que nostre cuœur ſon eſclaue demeure:</l>
+</lg>
+```
+
 
 ---
 ### Les entités
