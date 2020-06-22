@@ -70,7 +70,7 @@ Plein du venin dont il fault que ie meure.
 
 Ouvrez l'image `TEI_1.jpg` ([ici](https://github.com/gabays/Cours_Edition_Geneve/blob/master/Cours_02/Cours_02_exo/Cours_02_exo.jpg))
 
-Modélisez l'information que vous avez sous les yeux (pensez au détails: images, abréviations, retours à la ligne. . .)
+Modélisez l'information que vous avez sous les yeux (pensez au détails: images, abréviations, retours à la ligne, normalisation graphique. . .)
 * Que voyez-vous?
 * Comment l'éditeriez-vous?
 * Qu'encoderiez-vous?
