@@ -20,16 +20,16 @@ Plus d'informations sur [Wikipedia](https://fr.wikipedia.org/wiki/Extensible_Mar
 ### Les principales règles
 
 Ce langage de balisage fonctionne de manière simple
-```XML
+`XML
     <élément attribut="valeur">donnée</élément>
-```
-1. Un ```<élément>``` est entre chevrons
-2. Une ```<balise>``` doit être fermé ```</balise>```
-3. Une ```<balise1>``` ne doit ```<balise2>``` pas être croisée ```</balise1>``` avec un autre ```</balise2>```
-4. Une ```<balise/>``` peut être auto-fermante
-5. Un ```<élément>``` peut porter un @attribut (noté
-avec un ```@```)
-6. L’@attribut a une "valeur" (entre guillemets)
+`
+1. Un `<élément>` est entre chevrons
+2. Une `<balise>` doit être fermé `</balise>`
+3. Une `<balise1>` ne doit `<balise2>` pas être croisée `</balise1>` avec un autre `</balise2>`
+4. Une `<balise/>` peut être auto-fermante
+5. Un `<élément>` peut porter un `@attribut` (noté
+avec un `@`)
+6. L’@attribut` a une "valeur" (entre guillemets)
 
 ---
 
@@ -60,7 +60,7 @@ Structure sous-jacente:
 
 ### XML comme langage structuré (par des balises)
 
-```XML
+`XML
 <document>
   <paragraphe>
     <phrase>
@@ -84,15 +84,15 @@ Structure sous-jacente:
     </phrase>
   </paragraphe>
 </document>
-```
+`
 ---
 
 ### Une question fondamentale
 
 Une question fondamentale
-1. Nous avons ici utilisé ```<paragraphe>``` ou ```<phrase>```, mais nous aurions pu choisir d’autres noms.
-2. Si nous étions italiens, nous aurions choisi ```<paragrafo>``` et ```<frase>```
-3. Mais alors les documents sont encodés différemment: comment choisir des noms pour les ```<éléments>``` et les ```@attributs``` communs à tous?
+1. Nous avons ici utilisé `<paragraphe>` ou `<phrase>`, mais nous aurions pu choisir d’autres noms.
+2. Si nous étions italiens, nous aurions choisi `<paragrafo>` et `<frase>`
+3. Mais alors les documents sont encodés différemment: comment choisir des noms pour les `<éléments>` et les `@attributs` communs à tous?
 
 ---
 ### Exercice
@@ -127,7 +127,7 @@ Ces vocabulaires peuvent d’ailleurs être exprimés avec d’autres langages
 
 ### Trois particularités de la TEI
 
-1. Le vocabulaire est en anglais : on utilise une balise ```<w>``` (_word_) pour un ```<w>mot</w>```
+1. Le vocabulaire est en anglais : on utilise une balise `<w>` (_word_) pour un `<w>mot</w>`
 2. Il est limité: on ne peut (presque) pas inventer de nouvelles balises
 3. Il propose autant que possible un encodage sémantique (à l’inverse de LaTeX, par exemple)
 
@@ -139,29 +139,29 @@ Ces vocabulaires peuvent d’ailleurs être exprimés avec d’autres langages
 
 Procédural
 
-```XML
+`XML
 On emploie <italique>a priori</italique> les italiques pour les
 locutions et termes empruntés à d’autres langues.
-```
+`
 Sémantique
 
-```XML
+`XML
 On emploie <locutionEtrangère>a priori</locutionEtrangère> les
 italiques…
-```
+`
 Sémantique II
-```XML
+`XML
 On emploie <latin>a priori</latin> les italiques...
-````
+``
 
 ---
 
 ### En TEI
 
-```XML
+`XML
 On emploie <foreign xml:lang="la">a priori</foreign> les
 italiques...
-```
+`
 
 ---
 
@@ -187,7 +187,7 @@ Attention ! Il est souvent coûteux et compliqué de revenir sur certains choi
 ### Modélisation pour un philologue
 
 Concrètement, pour un philologue, les premières questions sont les suivantes:
-- Quels passages du textes doivent être balisés ? Les noms ? les locutions étrangères ? tous les mots ? Doit-on mettre la catégorie morpho-syntaxique et le lemme ?
+- Quels passages du texte doivent être balisés ? Les noms ? les locutions étrangères ? tous les mots ? Doit-on mettre la catégorie morpho-syntaxique et le lemme ?
 - Doit-on représenter la structure physique du document (folios, pages. . . ) ou la structure logique (chapitres, parties. . . )
 
 Attention, il est (presque) impossible de tout faire : il faut choisir !
@@ -195,7 +195,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
 ---
 
 ### Modélisation: Structure logique
-```XML
+`XML
 <document>
   <paragraphe>
     <phrase>
@@ -208,13 +208,13 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
     </phrase>
    </paragraphe>
   </document>
-```
+`
 
 ---
 
 ### Modélisation: Structure physique
 
-```XML
+`XML
 <document>
   <pb n="1"/>
   On emploie a priori les italiques pour les termes
@@ -223,7 +223,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
   emploie les petites capitales pour les noms propres,
   comme Léopold Delisle ou Jules Quicherat.
 </document>
-```
+`
 
 ---
 
@@ -233,7 +233,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
 ---
 
 Faible granularité
-```XML
+`XML
 <document>
   <paragraphe>
     <phrase>
@@ -246,12 +246,12 @@ Faible granularité
     </phrase>
    </paragraphe>
 </document>
-```
+`
 
 ---
 
 Moyenne granularité
-```XML
+`XML
 <document>
   <paragraphe>
     <phrase>
@@ -265,19 +265,19 @@ Moyenne granularité
       <nom>Jules Quicherat</nom>.
     </phrase>
    </paragraphe>
-```
+`
 
 ---
 
 Forte granularité
-```XML
+`XML
 <document>
   <paragraphe>
     <phrase>
       <w lemme="on" POS="PROper">On<w/>
       <w lemme="employer" POS="VERcjg">emploie<w>
      ...
-```
+`
 
 ---
 ### Exercices
