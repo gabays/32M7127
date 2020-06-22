@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exercice d'encodage</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Simon Gabay, UniGE</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Andromaque de Racine</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <!-- 
+========== PIECE
+      -->
+      <body>
+         <div type="play">
+            <head>ANDROMAQUE, <lb/><hi rend="italic">TRAGEDIE.</hi></head>
+            <!-- 
+===============ACTE 1
+            -->
+            <div type="act" n="1">
+               <head>ACTE PREMIER.</head>
+               <!-- 
+===============ACTE 1
+_______________SCENE 1
+               -->
+               <div type="scene" n="1">
+                  <head>SCENE PREMIERE.</head>
+                  <stage>ORESTE, PYLADE.</stage>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="1">
+                           <hi rend="initiale">O</hi>VY, <w>puis que</w> ie retrouue vn Amy ſi <lb/>fidelle,</l>
+                        <l n="2">Ma Fortune va prendre vne face nou <lb break="no" rend="-"/>uelle;</l>
+                        <l n="3">Et déja ſon courroux ſemble s'eſtre <lb/>adouci,</l>
+                        <l n="4">Depuis qu'elle a pris ſoin de nous rejoindre ici.</l>
+                        <l n="5">Qui m'euſt dit, qu'vn riuage à mes vœux si funeſte,</l>
+                        <l n="6">Préſenteroit d'abord Pylade aux yeux d'Oreſte,</l>
+                        <l n="7">Qu'apres plus de ſix mois que ie t'auois perdu,</l>
+                        <l n="8">A la Cour de Pyrrhus tu me ſerois rendu!</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>PYLADE.</speaker>
+                     <lg>
+                        <l n="9">I'en rends graces au Ciel, qui m'arreſtant ſans ceſſe,</l>
+                        <l n="10">Sembloit m'auoir fermé le chemin de la Gréce,</l>
+                        <l n="11">Depuis le jour fatal que la fureur des Eaux,</l>
+                        <l n="12">Preſque aux yeux de Mycéne, écarta nos Vaiſſeaux.</l>
+                        <l n="13">Combien dans cét exil ay-je ſouffert d'allarmes?</l>
+                        <l n="14">Combien à vos malheurs ay-je donné de larmes?</l>
+                        <l n="15">Craignant toûjours pour vous quelque nouueau
+                           <lb/>danger</l>
+                        <l n="16">Que ma triste Amitié ne pouuoit partager.</l>
+                        <l n="17">Sur tout ie redoutois cette Mélancolie</l>
+                        <l n="18">Où j'ay veu ſi <w>long-temps</w> voſtre Ame enſeuelie.</l>
+                        <l n="19">Ie craignois que le Ciel, par vn cruel ſecours,</l>
+                        <l n="20">Ne vous offrît la mort, que vous cherchiez toûjours.</l>
+                        <l n="21">Mais ie vous voy, Seigneur, &amp; ſi j'oſe le dire,</l>
+                        <l n="22">Vn Deſtin plus heureux vous conduit en Epire.</l>
+                        <l n="23">Le pompeux Appareil qui ſuit icy vos pas,</l>
+                        <l n="24">N'eſt point d'vn Malheureux qui cherche le trépas.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="25">Helas! qui peut ſçavoir le Deſtin qui m'ameine?</l>
+                        <l n="26">L'Amour me fait icy chercher vne Inhumaine.</l>
+                        <l n="27">Mais qui ſçait ce qu'il doit ordonner de mon Sort,</l>
+                        <l n="28">Et ſi ie viens chercher, ou la vie, ou la mort?</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>PYLADE.</speaker>
+                     <lg>
+                        <l n="29">Quoy! voſtre Ame à l'Amour, en Eſclaue aſſeruie,</l>
+                        <l n="30">Se repose ſur luy du ſoin de voſtre vie?</l>
+                        <l n="31">Par quels charmes, apres tant de tourmens soufferts</l>
+                        <l n="32">Peut-il vous inuiter à rentrer dans ſes fers?</l>
+                        <l n="33">Penſez-vous qu'Hermionne, à Sparte inéxorable,</l>
+                        <l n="34">Vous prépare en Epire vn Sort plus fauorable?</l>
+                        <l n="35">Honteux d'auoir pouſsé tant de vœux ſuperflus,</l>
+                        <l n="36">Vous l'abhorriez. Enfin, vous ne m'en parliez plus.</l>
+                        <l n="37" part="I">Vous me trompiez, Seigneur.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="37" part="F">Ie me trompois moy-méme.</l>
+                        <l n="38">Amy, n'inſulte point vn Malheureux qui t'aime.</l>
+                        <l n="39">T'ay-je iamais caché mon cœur &amp; mes deſirs?</l>
+                        <l n="40">Tu vis naiſtre ma flâme &amp; mes premiers ſoûpirs.</l>
+                        <l n="41">Enfin, quand Menelas diſpoſa de ſa Fille</l>
+                        <l n="42">En faueur de Pyrrhus, vangeur de ſa Famille;</l>
+                        <l n="43">Tu vis mon deſeſpoir, &amp; tu m’as veu depuis</l>
+                        <l n="44">Traîner de Mers en Mers ma chaîne &amp; mes ennuis.</l>
+                        <l n="45">Ie te vis à regret, en cét eſtat funeſte,</l>
+                        <l n="46">Preſt à ſuiure par tout le déplorable Oreſte,</l>
+                        <l n="47">Toûjours de ma fureur interrompre le cours,</l>
+                        <l n="48">Et de moy-meſme enfin me ſauuer tous les jours.</l>
+                        <l n="49">Mais quand ie me ſouuins, que parmy tant d’al
+                           <lb break="no" rend="-"/>larmes</l>
+                        <l n="50">Hermionne à Pyrrhus prodiguoit tous ſes charmes,</l>
+                        <l n="51">Tu ſçais de quel courroux mon cœur alors épris</l>
+                        <l n="52">Voulut, en l’oubliant, vanger tous ſes mépris.</l>
+                        <l n="53">Ie fis croire, &amp; ie crûs ma victoire certaine.</l>
+                        <l n="54">Ie pris tous mes tranſports pour des tranſports de
+                           <lb/>haine;</l>
+                        <l n="55">Déteſtant ſes rigueurs, rabaiſſant ſes attraits,</l>
+                        <l n="56">Ie défiois ſes yeux de me troubler iamais.</l>
+                        <l n="57">Voila comme ie crûs étouffer ma tendreſſe.</l>
+                        <l n="58">Dans ce calme trompeur j’arriuay dans la Gréce;</l>
+                        <l n="59">Et ie trouuay d’abord ſes Princes raſſemblez,</l>
+                        <l n="60">Qu’vn péril aſſez grand ſembloit auoir troublez.</l>
+                        <l n="61">I’y courus. Ie penſay que la Guerre, &amp; la Gloire,</l>
+                        <l n="62">De ſoins plus importans rempliroient ma memoire;</l>
+                        <l n="63">Que mes ſens reprenant leur premiere vigueur,</l>
+                        <l n="64">L’Amour acheueroit de ſortir de mon Cœur.</l>
+                        <l n="65">Mais admire auec moy le Sort, dont la pourſuite</l>
+                        <l n="66">Me fait courir moy-meſme au piege que j’éuite.</l>
+                        <l n="67">I’entens de tous coſtez qu’on menace Pyrrhus.</l>
+                        <l n="68">Toute la Gréce éclate en murmures confus.</l>
+                        <l n="69">On ſe plaint, qu’oubliant ſon Sang, &amp; ſa promeſſe,</l>
+                        <l n="70">Il éleue en ſa Cour l’Ennemy de la Gréce,</l>
+                        <l n="71">Aſtyanax, d'Hector jeune &amp; malheureux Fils,</l>
+                        <l n="72">Reſte de tant de Roys ſous Troye enſeuelis.</l>
+                        <l n="73">I’apprens, que pour rauir ſon enfance au Suplice,</l>
+                        <l n="74">Andromaque trompa l’ingénieux Vlyſſe,</l>
+                        <l n="75">Tandis qu’vn autre Enfant arraché de ſes bras,</l>
+                        <l n="76">Sous le nom de ſon Fils, fut conduit au trépas.</l>
+                        <l n="77">On dit, que peu ſenſible aux charmes d’ Hermionne,</l>
+                        <l n="78">Mon Riual porte ailleurs ſon Cœur &amp; ſa Couronne;</l>
+                        <l n="79">Ménelas, ſans le croire, en paroiſt affligé,</l>
+                        <l n="80">Et ſe plaint d’vn Hymen ſi long-temps negligé.</l>
+                        <l n="81">Parmy les déplaiſirs où ſon Ame ſe noye,</l>
+                        <l n="82">Il s’éleue en la mienne vne ſecrette joye.</l>
+                        <l n="83">Ie triomphe; &amp; pourtant ie me flate d’abord</l>
+                        <l n="84">Que la ſeule vengeance excite ce tranſport.</l>
+                        <l n="85">Mais l’Ingrate en mō Cœur reprit bientoſt ſa place,</l>
+                        <l n="86">De mes feux mal éteints ie reconnus la trace,</l>
+                        <l n="87">Ie ſentis que ma haine alloit finir ſon cours,</l>
+                        <l n="88">Ou plûtoſt ie ſentis que ie l’aimois toûjours.</l>
+                        <l n="89">Ainſi de tous les Grecs ie brigue le ſuffrage.</l>
+                        <l n="90">On m’enuoye à Pyrrhus. I’entreprens ce voyage.</l>
+                        <l n="91">Ie viens voir ſi l’on peut arracher de ſes bras</l>
+                        <l n="92">Cét Enfant, dont la vie allarme tant d’Eſtats.</l>
+                        <l n="93">Heureux, ſi ie pouuois dans l’ardeur qui me preſſe,</l>
+                        <l n="94">Au lieu d’Aſtyanax, luy rauir ma Princeſſe.</l>
+                        <l n="95">Car enfin n’attens pas que mes feux redoublez,</l>
+                        <l n="96">Des périls les plus grands, puiſſent eſtre troublez.</l>
+                        <l n="97">Puis qu’apres tant d’efforts ma reſiſtance eſt vaine,</l>
+                        <l n="98">Ie me liure en aueugle au tranſport qui m’entraîne,</l>
+                        <l n="99">I’aime, ie viens chercher Hermionne en ces lieux,</l>
+                        <l n="100">La fléchir, l’enleuer, ou mourir à ſes yeux.</l>
+                        <l n="101">Toy qui connois Pyrrhus, que penſes-tu qu’il faſſe?</l>
+                        <l n="102">Dans ſa Cour, dans ſon Cœur, dy-moy ce qui ſe
+                           <lb/>paſſe.</l>
+                        <l n="103">Mon Hermionne encor le tient-elle aſſeruy?</l>
+                        <l n="104">Me rendra-t'il, Pylade, vn Cœur qu’il m’a rauy?</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>PYLADE.</speaker>
+                     <lg>
+                        <l n="105">Ie vous abuſerois, ſi i’oſois vous promettre</l>
+                        <l n="106">Qu’entre vos mains, Seigneur, il voulut la remettre.</l>
+                        <l n="107">Non, que de ſa Conqueſte il paroiſſe flaté.</l>
+                        <l n="108">Pour la Veuue d’Hector ſes feux ont éclaté.</l>
+                        <l n="109">Il l’aime. Mais enfin cette Veuue inhumaine</l>
+                        <l n="110">N’a payé jusqu’icy ſon amour que de haine,</l>
+                        <l n="111">Et chaque jour encore on luy voit tout tenter,</l>
+                        <l n="112">Pour fléchir ſa Captive, ou pour l’épouuanter.</l>
+                        <l n="113">Il luy cache ſon Fils, il menaſſe ſa teſte,</l>
+                        <l n="114">Et fait couler des pleurs, qu’auſſi-toſt il arreſte.</l>
+                        <l n="115">Hermionne elle-meſme a veu plus de cent fois</l>
+                        <l n="116">Cet Amant irrité reuenir ſous ſes loix,</l>
+                        <l n="117">Et de ſes vœux troublez luy rapportant l’hommage,</l>
+                        <l n="118">Soûpirer à ſes pieds moins d’amour, que de rage.</l>
+                        <l n="119">Ainſi n’attendez pas, que l’on puiſſe aujourd’huy</l>
+                        <l n="120">Vous répondre d’vn Cœur, ſi peu maiſtre de luy.</l>
+                        <l n="121">Il peut, Seigneur, il peut dans ce deſordre
+                           extré<lb break="no" rend="-"/>me,</l>
+                        <l n="122">Epouſer ce qu’il hait, &amp; perdre ce qu’il aime.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="123">Mais dy-moy, de quel œil Hermionne peut voir</l>
+                        <l n="124">Ses attraits offenſez, &amp; ſes yeux ſans pouuoir.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>PYLDADE.</speaker>
+                     <lg>
+                        <l n="125">Hermionne,
+                           Seigneur, au moins eu apparance,</l>
+                        <l n="126">Semble de ſon Amant dédaigner l’inconſtance,</l>
+                        <l n="127">Et croit que trop heureux d’appaiſer ſa rigueur,</l>
+                        <l n="128">Il la viendra preſſer de reprendre ſon Cœur.</l>
+                        <l n="129">Mais ie l’ay veuë enfin me confier ſes larmes.</l>
+                        <l n="130">Elle pleure en ſecret le mépris de ſes charmes.</l>
+                        <l n="131">Toûjours preſte à partir, &amp; demeurant toûjours,</l>
+                        <l n="132">Quelquefois elle appelle Oreſte à ſon ſecours.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="133">Ah! ſi ie le croyois, i’irois bientoſt, Pylade,</l>
+                        <l n="134" part="I">Me jetter…</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>PYLADE.</speaker>
+                     <lg>
+                        <l n="134" part="F">Acheuez, Seigneur, voſtre Ambaſſade.</l>
+                        <l n="135">Vous attendez le Roy. Parlez, &amp; lui montrez</l>
+                        <l n="136">Contre le Fils d’Hector tous les Grecs conjurez.</l>
+                        <l n="137">Loin de leur accorder ce Fils de ſa Maiſtreſſe,</l>
+                        <l n="138">Leur haine ne fera qu’irriter ſa tendreſſe.</l>
+                        <l n="139">Plus on les veut broüiller, plus on va les vnir.</l>
+                        <l n="140">Preſſez. Demandez tout, pour ne rien obtenir.</l>
+                        <l n="141" part="I">Il vient.</l>
+                     </lg>
+                  </sp>
+                  <sp>
+                     <speaker>ORESTE.</speaker>
+                     <lg>
+                        <l n="141" part="F">Hé bien, va donc diſpoſer la Cruelle</l>
+                        <l n="142">A reuoir vn Amant qui ne vient que pour elle.</l>
+                     </lg>
+                  </sp>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

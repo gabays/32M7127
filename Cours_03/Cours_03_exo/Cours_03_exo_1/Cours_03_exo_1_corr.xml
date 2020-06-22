@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="sonnet" n="1" xml:id="s1">
+            <head>Sonetz</head>
+            <lg type="quatrain" rhyme="abba">
+               <l n="1">QVI voudra voyr comme vn Dieu me <rhyme label="a">ſurmonte</rhyme>,</l>
+               <l n="2">Comme il m'aſſault, comme il ſe fait <rhyme label="b">vainqueur</rhyme>:</l>
+               <l n="3">Comme il r'enflamme, &amp; et renglace mon <rhyme label="b">cuœur</rhyme>,</l>
+               <l n="4">Comme il reçoit un hõnneur de ma <rhyme label="a">honte</rhyme>.</l>
+            </lg>
+            <lg type="quatrain" rhyme="abba">
+               <l n="5">Qui voudra voir une ieuneſſe <rhyme label="a">prompte</rhyme></l>
+               <l n="6">A ſuivre en vain l'obiect de ſon <rhyme label="b">malheur</rhyme>,</l>
+               <l n="7">Me vienne voir: Il voirra ma <rhyme label="b">douleur</rhyme>,</l>
+               <l n="8">Et la rigueur de l'Archer qui me <rhyme label="a">donte</rhyme>.</l>
+            </lg>
+            <lg type="tercet" rhyme="ccd">
+               <l n="9">Il cognoistra combien la raiſon <rhyme label="c">peult</rhyme></l>
+               <l n="10">Contre ſon arc, quand vne fois il <rhyme label="c">veult</rhyme></l>
+               <l n="11">Que nostre cuœur ſon eſclaue <rhyme label="d">demeure</rhyme>:</l>
+            </lg>
+            <lg type="tercet" rhyme="ccd">
+               <l n="12">Et ſi voirra que ie ſuis trop <rhyme label="c">heureux</rhyme>,</l>
+               <l n="13">D'auoir au flanc l'aiguillon <rhyme label="c">amoureux</rhyme>,</l>
+               <l n="14">Plein du venin dont il fault que ie <rhyme label="d">meure</rhyme>.</l>
+            </lg>
+         </div>
+      </body>
+  </text>
+</TEI>
