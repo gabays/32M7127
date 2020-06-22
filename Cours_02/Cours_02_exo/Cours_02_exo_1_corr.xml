@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    
+    <titre style="majuscule">
+        <ligne/>LES AMOVRS DE P<choisir><abrégé>.</abrégé><developpé>ierre</developpé></choisir>
+        <ligne/>DE RONSARD.
+    </titre>        
+    
+    <poeme>
+        
+        <titre><ligne/>Sonetz.</titre>
+        
+        <strophe type="quatrain" schema="abba">
+            <vers><ligne/><decoration>Q</decoration>VI voudra voyr comme vn Dieu
+                <ligne alinea="oui"/>me <rime type="a">ſurmonte</rime>,</vers>
+            <vers><ligne/>Comme il m'aſſault, comme il
+                <ligne alinea="oui"/>ſe fait <rime type="b">vainqueur</rime>:</vers>
+            <vers><ligne/>Comme il r'enflamme, et et ren
+                <ligne alinea="oui"/>glace mon <rime type="b">cuœur</rime>,</vers>
+            <vers><ligne/>Comme il reçoit un hõnneur de
+                <ligne alinea="oui"/>ma <rime type="a">honte</rime>.</vers>
+        </strophe>
+        
+        <strophe type="quatrain">
+            <vers><ligne/>Qui voudra voir une ieuneſſe <rime>prompte</rime></vers>
+            <vers><ligne alinea="oui"/>A ſuivre en vain l'obiect de ſon <rime>malheur</rime>,</vers>
+            <vers><ligne alinea="oui"/>Me vienne voir: Il voirra ma <rime>douleur</rime>,</vers>
+            <vers><ligne alinea="oui"/>Et la rigueur de l'Archer qui me <rime>donte</rime>.</vers>
+        </strophe>
+        
+        <strophe type="tercet">
+            <vers><ligne/>Il cognoistra combien la raiſon <rime>peult</rime></vers>
+            <vers><ligne alinea="oui"/>Contre ſon arc, quand vne fois il <rime>veult</rime></vers>
+            <vers><ligne alinea="oui"/>Que nostre cuœur ſon eſclaue <rime>demeure</rime>:</vers>
+        </strophe>
+        
+        <strophe type="tercet">
+            <vers>Et ſi voirra que ie ſuis trop heureux,</vers>
+            <vers alinea="oui">D'auoir au flanc l'aiguillon amoureux,</vers>
+            <vers alinea="oui">Plein du venin dont il fault que ie meure.</vers>
+        </strophe>
+        
+    </poeme>
+    
+</page>
