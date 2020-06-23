@@ -13,9 +13,10 @@ Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
 
 ## Cours
 
+* `Cours_01`: Introduction
+
 **BLOC 1: les bases**
 
-* `Cours_01`: Introduction
 * `Cours_02`: XML et TEI
 * `Cours_03`: Le texte
 * `Cours_04`: Le texte augmenté (intervention et mise en page)
@@ -26,9 +27,14 @@ Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
 **BLOC 2: un peu plus loin**
 * `Cours_08`: La correspondance manuscrite et les entités nommées
 * `Cours_09`: L'annotation critique
+* `Cours_10`: Technologies du web
+* `Cours_11`: Fouille de texte avec XPath
+* `Cours_12`: Manipulation du XML
 
-
-
+**BLOC 3: production, exploitation**
+* `Cours_13`: La reconnaissance optique de caractères
+* `Cours_14`: L'annotation linguistique
+* `Cours_15`: Exploration textométrique
 
 ## Logiciels
 
