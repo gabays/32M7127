@@ -15,12 +15,12 @@
          </titleStmt>
          <publicationStmt>
             <publisher>
-               <orgName>Université de Lorraine</orgName>
+               <orgName>Université de Genève</orgName>
                <address>
-                  <addrLine>Ile du Saulcy</addrLine>
-                  <postCode>57045</postCode>
-                  <settlement>Metz</settlement>
-                  <country>France</country>
+                  <addrLine>24 rue du Général-Dufour</addrLine>
+                  <postCode>1211</postCode>
+                  <settlement>Genève</settlement>
+                  <country>Suisse</country>
                </address>
             </publisher>
             <availability status="restricted">
@@ -29,7 +29,7 @@
             <date when="2019-05-02">02/05/2019</date>
          </publicationStmt>
          <notesStmt>
-            <note>Exercice d'encodage dans le cadre de la formation de l'université de Lorraine à l'édition de texte.</note>
+            <note>Exercice d'encodage dans le cadre de la formation de l'université de Genève à l'édition de texte.</note>
          </notesStmt>
          <sourceDesc>
             <bibl>

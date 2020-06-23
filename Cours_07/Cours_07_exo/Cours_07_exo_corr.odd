@@ -107,7 +107,7 @@
           
           <elementSpec ident="l" mode="change">
             <!-- Je rajoute des informations qu apparaîtront dans la définition -->
-            <desc>Attention, le vers <gi>l</gi> est différent du début de lirng <gi>lb</gi></desc>
+            <desc>Attention, le vers <gi>l</gi> est différent du début de ligne <gi>lb</gi></desc>
             <!-- je précise les attributs autorisés -->
             <content>
               <textNode/>

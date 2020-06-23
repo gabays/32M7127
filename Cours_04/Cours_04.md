@@ -79,7 +79,7 @@ Il est possible de corriger le texte
 
 ```XML
 Pylade est un home
-Pylade est un h<corr>om</corr>me
+Pylade est un hom<corr>m</corr>e
 ```
 
 Au cas où l'on perd de l'information lors de la correction, on peut aussi la conserver avec un ```<choice>```
