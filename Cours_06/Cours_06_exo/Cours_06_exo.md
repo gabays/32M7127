@@ -27,7 +27,7 @@ Une proposition de solution se trouve dans le fichier `Cours_06_exo_corr`.
 
 ---
 
-## Informations bibliographiques
+### Informations bibliographiques
 
 Vous trouverez ici les informations bibliographiques nécessaires à la constitution du `teiHeader`.
 
