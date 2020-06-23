@@ -85,8 +85,8 @@ Il est possible d'encoder une liste de personnes.
 <listPerson>
   <person>
     <persName>
-      <forename>Jean</forename> 
-      <surname>Racine</surname> 
+      <forename>Jean</forename>
+      <surname>Racine</surname>
     </persName>
     <birth>
       <date when="1639"/>
@@ -99,7 +99,7 @@ Il est possible d'encoder une liste de personnes.
     <occupation>Dramaturge</occupation>
   </person>
   <person>…</person>
-</listPerson> 
+</listPerson>
 ```
 
 ---
@@ -117,7 +117,7 @@ Il est possible d'encoder une liste de lieux.
     </location>
   </place>
   <place>…</place>
-</listPlace> 
+</listPlace>
 ```
 
 ---
@@ -221,7 +221,6 @@ Dans les deux cas on peut encoder toutes les informations nécessaires (lieu, pe
 </correspDesc>
 ```
 
-
 ---
 ## `profileDesc`
 
@@ -251,3 +250,8 @@ Dans les deux cas on peut encoder toutes les informations nécessaires (lieu, pe
    </correspDesc>
 </profileDesc>
 ```
+
+---
+## `msDesc`
+
+Développer sur le msDesc

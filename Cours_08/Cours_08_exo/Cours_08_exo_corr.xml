@@ -93,14 +93,94 @@
         </editorialDecl>
      </encodingDesc>
      <profileDesc>
+        <particDesc>
+           <listPerson>
+              <person corresp="isni:0000000122780157">
+                 <persName>
+                    <forename>Marie</forename>
+                    <nameLink>de</nameLink>
+                    <surname>Rabutin-Chantal</surname>
+                    <roleName>marquise</roleName>
+                    <nameLink>de</nameLink>
+                    <placeName>Sévigné</placeName>
+                 </persName>
+                 <birth>
+                    <placeName>Paris</placeName>
+                    <date when="1626-02-05">5 février 1626</date>
+                 </birth>
+                 <death>
+                    <placeName>Grignan</placeName>
+                    <date when="1696-04-17">17 avril 1696</date>
+                 </death>
+                 <residence>
+                    <placeName ref="geonames:2988507">Paris</placeName>
+                    <placeName ref="geonames:2999754">Les Rochers</placeName>
+                 </residence>
+              </person>
+              <person xml:id="jarie">
+                 <persName>
+                    <forename>Louis</forename>
+                    <roleName>de</roleName>
+                    <surname>La Jarie</surname>
+                 </persName>
+                 <occupation>fermier</occupation>
+              </person>
+              <person xml:id="herigoyen">
+                 <persName>
+                    <forename>Jean</forename>
+                    <roleName>d'</roleName>
+                    <surname>Hérigoyen</surname>
+                 </persName>
+                 <occupation>fermier</occupation>
+              </person>
+              <person xml:id="harouys">
+                 <persName>
+                    <forename>Guillaume</forename>
+                    <roleName>de</roleName>
+                    <surname>Harouys</surname>
+                    <roleName>seigneur</roleName>
+                    <nameLink>de</nameLink>
+                    <placeName>La Seilleraye</placeName>
+                 </persName>
+                 <birth>
+                    <date when="1611">1611</date>
+                 </birth>
+                 <death>
+                    <date when="1699">1699</date>
+                 </death>
+                 <occupation>chevalier, trésorier des États de Bretagne</occupation>
+                 <residence>Carquefou</residence>
+              </person>
+           </listPerson>
+        </particDesc>
+        <settingDesc>
+           <listPlace>
+              <place corresp="geonames:2988507">
+                 <placeName>Paris</placeName>
+                 <country>France</country>
+                 <location>
+                    <geo>48.11198, -1.67429</geo>
+                 </location>
+              </place>
+              <place corresp="geonames:2999754">
+                 <placeName>Château des Rochers</placeName>
+                 <settlement>Vitré</settlement>
+                 <region>Bretagne</region>
+                 <country>France</country>
+                 <location>
+                    <geo>48.081430, -1.166975</geo>
+                 </location>
+              </place>
+           </listPlace>
+        </settingDesc>
         <correspDesc>
            <correspAction type="sent">
               <persName ref="isni:0000000122780157">Madame de Sévigné</persName>
-              <placeName ref="#rochers">Paris</placeName>
+              <placeName ref="geonames:2988507">Paris</placeName>
               <date when="1686-07-20">20 juillet 1686</date>
            </correspAction>
            <correspAction type="received">
-              <persName xml:id="herigoyen">M. d'Herigoyen</persName>
+              <persName ref="#herigoyen">M. d'Herigoyen</persName>
            </correspAction>
         </correspDesc>
      </profileDesc>
@@ -138,12 +218,12 @@
                <lb/><persName>la iarye</persName> me doit encore
                <lb/>1300 lt qui deuront auoir
                <lb/>donnes, il y a neuf mois
-               <lb/>a <persName>mr dharouys</persName>, ce manque
+               <lb/>a <persName ref="#harouys">mr dharouys</persName>, ce manque
                <lb/>de parole ma outree contre 
                <lb/>luy, de plus il me deura
                <gap reason="sampling"/>
                <lb/>a dieu
-               <lb/>monsr de Hirigoyen, sy
+               <lb/><persName ref="#herigoyen">monsr de Hirigoyen</persName>, sy
                <lb/>nous nous connessions, il
                <lb/>me semble que nous serions
                <lb/>bons amis, iespere que
@@ -156,8 +236,7 @@
                <address>
                   <addrLine>Pour</addrLine>
                   <addrLine>monsieur de</addrLine>
-                  <addrLine><persName ref="#herigoyen
-                     ">Hirygoyen</persName></addrLine>
+                  <addrLine><persName ref="#herigoyen">Hirygoyen</persName></addrLine>
                </address>
             </closer>            
          </div>
