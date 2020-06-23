@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Un premier exercice d'encodage en TEI</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Formation à l'édition numérique de Genève</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Ronsard, Les Amours, Paris : Vve M. de La Porte, 1552, p. 5 (https://gallica.bnf.fr/ark:/12148/bpt6k10406040/f17.image).</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="sonnet" n="s1" xml:id="s1">
+            <head>Sonetz</head>
+            <lg type="quatrain">
+               <l>QVI voudra voyr comme vn Dieu me ſurmonte,</l>
+               <l>Comme il m'aſſault, comme il ſe fait vainqueur:</l>
+               <l>Comme il r'enflamme, &amp; et renglace mon cuœur,</l>
+               <l>Comme il reçoit un hõnneur de ma honte.</l>
+            </lg>
+            <lg>
+               <l>Qui voudra voir une ieuneſſe prompte</l>
+               <l>A ſuivre en vain l'obiect de ſon malheur,</l>
+               <l>Me vienne voir: Il voirra ma douleur,</l>
+               <l>Et la rigueur de l'Archer qui me donte.</l>
+            </lg>
+            <lg>
+               <l>Il cognoistra combien la raiſon peult</l>
+               <l>Contre ſon arc, quand vne fois il veult</l>
+               <l>Que nostre cuœur ſon eſclaue demeure:</l>
+            </lg>
+            <lg>
+               <l>Et ſi voirra que ie ſuis trop heureux,</l>
+               <l>D'auoir au flanc l'aiguillon amoureux,</l>
+               <l>Plein du venin dont il fault que ie meure.</l>
+            </lg>
+         </div>
+      </body>
+  </text>
+</TEI>
