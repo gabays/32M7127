@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Berlin, Slg. Darmst. 2m 1660</title>
+            <respStmt>
+               <persName ref="isni:0000000419576448">Simon Gabay</persName>
+               <resp><date>2018</date>Editeur scientifique</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority ref="geonames:10391342">Université de Neuchâtel</authority>
+            <address>
+               <street>Espace Louis Agassiz 1</street>
+               <postCode>2000</postCode>
+               <settlement ref="geonames:2659496">Neuchâtel</settlement>
+               <country key="CH">Suisse</country>
+            </address>
+            <availability status="restricted">
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0">Attribution-ShareAlike
+                  4.0 International (CC BY-SA 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country key="DE">Allemagne</country>
+                  <settlement ref="geonames:2950159">Berlin</settlement>
+                  <institution ref="geonames:6944099">Staatsbibliothek zu Berlin</institution>
+                  <repository>Haus Potsdamer Strasse</repository>
+                  <collection>Sammlung Darmstaedter</collection>
+                  <idno type="shelfmark">Slg. Darmst. 2m 1660</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <docAuthor ref="isni:0000000122780157">Madame de Sévigné</docAuthor>
+                     <docDate when="1686-07-20">20 juillet 1686</docDate>
+                     <incipit>J'ai vu M. Revol</incipit>
+                     <explicit>J'espère que j'aurai sujet d'être contente de vous.</explicit>
+                     <filiation type="autograph"/>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material>papier</material>
+                        </support>
+                        <extent>
+                           <measure unit="folio" n="3"/>
+                           <measure unit="page" n="6"/>
+                           <width unit="mm" n="125"/>
+                           <height unit="mm" n="188"/>
+                        </extent>
+                        <foliation>Foliotation, pas de pagination, au crayon</foliation>
+                     </supportDesc>
+                  </objectDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Aucune: le manuscrit est dans un portefeuille.</p>
+                     </binding>
+                  </bindingDesc>
+                  <accMat>Le manuscrit est accompagné d'une documentation succincte
+                     concernant l'achat de la lettre.</accMat>
+               </physDesc>
+               <history>
+                  <provenance>Achat, probablement par L. Darmstaedter de la lettre à la 
+                     Revue des Autographes.</provenance>
+                  <acquisition when="1907">Don de Ludwig Darmstaedter (1846-1927) à la
+                      Königliche Bibliothek (aujourd'hui la Staatsbibliothek zu Berlin).</acquisition>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <projectDesc>
+           <p>Formation en humanité numériques.</p>
+        </projectDesc>
+        <editorialDecl>
+           <correction>
+              <p>Les corrections sont encodées</p>
+           </correction>
+           <hyphenation>
+              <p>La césure des mots en fin de ligne respecte l'original</p>
+           </hyphenation>
+           <normalization>
+              <p>Aucune intervention (segmentation, abréviations, etc.)</p>
+           </normalization>
+        </editorialDecl>
+     </encodingDesc>
+     <profileDesc>
+        <correspDesc>
+           <correspAction type="sent">
+              <persName ref="isni:0000000122780157">Madame de Sévigné</persName>
+              <placeName ref="#rochers">Paris</placeName>
+              <date when="1686-07-20">20 juillet 1686</date>
+           </correspAction>
+           <correspAction type="received">
+              <persName xml:id="herigoyen">M. d'Herigoyen</persName>
+           </correspAction>
+        </correspDesc>
+     </profileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="lettre">
+            <pb n="1r" facs="00000001.jpg"/>
+            <opener>
+               <dateline>a <settlement>paris</settlement> <date>20e uillet
+                  <lb/>1686</date></dateline>
+            </opener>
+            <p>
+               <lb/>iay veu <persName>mr reuol</persName> qui
+               <lb/>ma conseillé de vous
+               <lb/>envoyer ma procuration
+               <lb/>pour agir pour ma sureté
+               <lb/>selon que vous le trouueres
+               <lb/>a propos, vous deues
+               <lb/>prendre desormais quelque
+               <lb/><hi rend="italic">interest a mes affaires
+               <lb/>tout au moins pour vn</hi>
+               <lb/><hi rend="italic">an qui</hi> est le temps que
+               <lb/><hi rend="italic">vous</hi> aues afermé <placeName>le <hi rend="italic">buron</hi></placeName>
+               <lb/><hi rend="italic">mais</hi> pour vous dire
+               <lb/><hi rend="italic">le vray</hi> <persName ref="#herigoyen">monsieur de
+               <lb/><hi rend="italic">Hiry</hi>goyen</persName> iespere, et ie
+               <lb/><hi rend="italic">suis pers</hi>uadee, que vous
+               <lb/>vous en trouueres asses
+               <pb n="1v" facs="00000002.jpg"/>
+               <lb/><hi rend="italic">bien</hi> pour vous obliger
+               <lb/><hi rend="italic">a faire vn plus long bail</hi>
+               <lb/>quoy qui en soit rendes
+               <lb/>moy seruice en ceste ocasion
+               <lb/><persName>la iarye</persName> me doit encore
+               <lb/>1300 lt qui deuront auoir
+               <lb/>donnes, il y a neuf mois
+               <lb/>a <persName>mr dharouys</persName>, ce manque
+               <lb/>de parole ma outree contre 
+               <lb/>luy, de plus il me deura
+               <gap reason="sampling"/>
+               <lb/>a dieu
+               <lb/>monsr de Hirigoyen, sy
+               <lb/>nous nous connessions, il
+               <lb/>me semble que nous serions
+               <lb/>bons amis, iespere que
+               <lb/>iauray suiet destre contante
+               <lb/>de vous.
+            </p>
+            <closer><signed>M de Rabutin
+               <lb/>Chantal</signed>
+               <pb n="3v" facs="00000004.jpg"/>
+               <address>
+                  <addrLine>Pour</addrLine>
+                  <addrLine>monsieur de</addrLine>
+                  <addrLine><persName ref="#herigoyen
+                     ">Hirygoyen</persName></addrLine>
+               </address>
+            </closer>            
+         </div>
+      </body>
+  </text>
+</TEI>
