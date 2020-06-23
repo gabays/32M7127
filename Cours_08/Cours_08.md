@@ -53,8 +53,10 @@ Parfois, il n'y pas d'entité nommée, mais une référence à une entité nomm�
 ## Référentiels
 
 Pensez à utiliser des référentiels, plutôt qu'inventer vos propres identifiants.
+1. Pour les personnes:
 * ISNI (_International Standard Name Identifier_): https://isni.org/
 * VIAF (_Virtual International Authority File_): https://viaf.org/
+2. Pour les lieux (ou les institutions)
 * Geonames: http://www.geonames.org/
 * Pleiades: https://pleiades.stoa.org
 * WHG (_World-Historical Gazetteer_): http://whgazetteer.org/
