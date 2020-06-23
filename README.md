@@ -46,7 +46,7 @@ Vous devez installer:
 
 En option:
 * Installez TreeTagger avec _TXM_ [[plus d'informations ici](http://txm.sourceforge.net/installtreetagger_fr.html)].
-* Si vous souhaitez utiliser toutes les fonctionnalités de gitHub, essayez de télécharger [_GitHub_](https://desktop.github.com/).
+* Si vous souhaitez utiliser toutes les fonctionnalités de gitHub, essayez de télécharger [_GitHub Desktop_](https://desktop.github.com/).
 
 ### Cite this repository
 Simon Gabay (éd.), _Encoder, Analyser - Introduction à la philologie numérique_, Genève: Université de Genève, 2020, [https://github.com/gabays/Cours_Edition_Geneve](https://github.com/gabays/Cours_Edition_Geneve).
