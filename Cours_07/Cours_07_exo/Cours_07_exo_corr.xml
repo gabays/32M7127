@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Cours_07_exo_corr.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="Cours_07_exo_corr.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edition numérique du premier sonnet des Amours</title>
+            <author>Ronsard</author>
+            <editor xml:id="SG">
+               <forename>Simon</forename>
+               <surname>Gabay</surname>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName>Université de Lorraine</orgName>
+               <address>
+                  <addrLine>Ile du Saulcy</addrLine>
+                  <postCode>57045</postCode>
+                  <settlement>Metz</settlement>
+                  <country>France</country>
+               </address>
+            </publisher>
+            <availability status="restricted">
+               <licence  target="https://creativecommons.org/licenses/by/2.0">Attribution 2.0 Generic (CC BY 2.0)</licence>
+            </availability>
+            <date when="2019-05-02">02/05/2019</date>
+         </publicationStmt>
+         <notesStmt>
+            <note>Exercice d'encodage dans le cadre de la formation de l'université de Lorraine à l'édition de texte.</note>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Ronsard</author>
+               <title>Les Amours</title>
+               <pubPlace>Paris</pubPlace>
+               <publisher>Vve M. de La Porte</publisher>
+               <date when="1552">1552</date>
+               <biblScope unit="page" n="5"> p. 5</biblScope>
+               <ptr type="gallica" target="https://gallica.bnf.fr/ark:/12148/bpt6k10406040/f17.image"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+     <revisionDesc>
+        <change when="2019-05-02">
+           <persName ref="#SG">Simon Gabay</persName>
+           Ajout des métadonnées dans le header.
+        </change>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="sonnet" n="1" xml:id="s1">
+            <head>Sonetz</head>
+            <lg type="quatrain">
+               <l n="1">QVI voudra voyr comme vn  Dieu me <rhyme>ſurmonte,</rhyme></l>
+               <l n="2">Comme il m'aſſault, comme il ſe fait <rhyme>vainqueur</rhyme>:</l>
+               <l n="3">Comme il r'enflamme, &amp; et renglace mon cuœur,</l>
+               <l n="4">Comme il reçoit un hõnneur de ma honte.</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="5">Qui voudra voir une ieuneſſe prompte</l>
+               <l n="6">A ſuivre en vain l'obiect de ſon malheur,</l>
+               <l n="7">Me vienne voir: Il voirra ma douleur,</l>
+               <l n="8">Et la rigueur de l'Archer qui me donte.</l>
+            </lg>
+            <lg type="tercet">
+               <l n="9">Il cognoistra combien la raiſon peult</l>
+               <l n="10">Contre ſon arc, quand vne fois il veult</l>
+               <l n="11">Que nostre cuœur ſon eſclaue demeure:</l>
+            </lg>
+            <lg type="tercet">
+               <l n="12">Et ſi voirra que ie ſuis trop heureux,</l>
+               <l n="13">D'auoir au flanc l'aiguillon amoureux,</l>
+               <l n="14">Plein du venin dont il fault que ie meure.</l>
+            </lg>
+         </div>
+      </body>
+  </text>
+</TEI>

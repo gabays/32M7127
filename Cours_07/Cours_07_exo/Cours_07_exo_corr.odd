@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Test</title>
+        <author xml:id="SG">Simon Gabay</author>
+        <editor xml:id="sbauman.emt">Syd Bauman</editor>
+        <editor xml:id="LB">Lou Burnard</editor>
+        <editor xml:id="SR">Sebastian Rahtz</editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI Consortium</publisher>
+        <availability status="restricted">
+          <licence  target="https://creativecommons.org/licenses/by-sa/2.0">Attribution 2.0 Generic (CC BY SA 2.0)</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Ronsard</author>
+          <title>Les Amours</title>
+          <pubPlace>Paris</pubPlace>
+          <publisher>Vve M. de La Porte</publisher>
+          <date when="1552">1552</date>
+          <biblScope unit="page" n="5"> p. 5</biblScope>
+          <ptr type="gallica" target="https://gallica.bnf.fr/ark:/12148/bpt6k10406040/f17.image"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2020-06-23" who="#SG">Modification du document produit par Roma</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Cette customisaton de la TEI a été conçue pour <title>Les Amours</title> de Ronsard.
+        Elle est donc adaptée à la poésie en vers.</p>
+      <div>
+        <head>Structure de texte</head>
+        <p>Nous utilisons notamment deux éléments
+          <specList>
+            <specDesc key="lg"/>
+            <specDesc key="l"/>
+          </specList>
+        </p>
+        <p>L'élément <gi>div</gi> peut contenir un <gi>head</gi> et des <gi>lg</gi></p>
+        <p>L'attribut <att>n</att> sur l'élément <gi>l</gi> est obligatoire.</p>
+      </div>
+      <div>
+        <head>Les métadonnées</head>
+        <p>L'essentiel des métadonnées sont fournies dans les trois éléments suivants:
+          <specList>
+            <specDesc key="titleStmt"/>
+            <specDesc key="publicationStmt"/>
+            <specDesc key="sourceDesc"/>
+          </specList>
+        </p>
+      </div>
+      <div>
+        
+        <!-- les attributs sont gérés par classe. Plutôt que de retirer le même attribut
+          x fois, je peux juste le retirer de sa classe -->
+        
+        <head>Modification des classes</head>
+        <specGrp xml:id="classmods">
+          <classSpec ident="att.global" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+            </attList>
+          </classSpec>
+          <classSpec ident="att.global.rendition" mode="change" module="tei" type="atts">
+            <attList>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+            </attList>
+          </classSpec>
+          <classSpec ident="att.fragmentable" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.divLike" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.declaring" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.written" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.global.source" mode="delete" module="tei" type="atts"/>
+          <classSpec ident="att.global.responsibility" mode="delete" module="tei" type="atts"/>
+        </specGrp>
+      </div>
+      <div>
+        
+        <!-- Ici je précise quels éléments j'autorise. De la même manière que les attributs sont regroupés par classes
+        les éléments sont regroupés par modules.-->
+        
+        <head>Déclaration formelle</head>
+        <schemaSpec ident="Poetry" xml:lang="fr" prefix="tei_" targetLang="fr" docLang="fr">
+          <moduleRef key="namesdates" include="forename surname orgName settlement country persName"/>
+          <moduleRef key="analysis" include="c"/>
+          <moduleRef key="core"
+            include="p list item head author title publisher address addrLine postCode date note bibl pubPlace biblScope ptr lg l editor"/>
+          <moduleRef key="tei"/>
+          <moduleRef key="verse" include="rhyme"/>
+          <moduleRef key="header"
+            include="teiHeader fileDesc titleStmt publicationStmt sourceDesc availability licence notesStmt revisionDesc change"/>
+          <moduleRef key="textstructure" include="TEI text body div front back"/>
+          <specGrpRef target="#classmods"/>
+          <specGrpRef target="#bodyfixes"/>
+          <specGrpRef target="#hdrfixes"/>
+          
+          <!-- Ici j'ai modifié un élément -->
+          
+          <elementSpec ident="l" mode="change">
+            <!-- Je rajoute des informations qu apparaîtront dans la définition -->
+            <desc>Attention, le vers <gi>l</gi> est différent du début de lirng <gi>lb</gi></desc>
+            <!-- je précise les attributs autorisés -->
+            <content>
+              <textNode/>
+              <elementRef key="rhyme" minOccurs="0" maxOccurs="1"/>
+              <textNode/>
+            </content>
+            <attList>
+              <!-- je retire un attribut -->
+              <attDef ident="part" mode="delete"/>
+              <!-- je rends obligatoire cet attribut -->
+              <attDef ident="n" mode="change" usage="req">
+                <!-- je précise le type de données autorisées (ici des chiffres) -->
+                <datatype>
+                  <dataRef key="teidata.count"/>
+                </datatype>
+              </attDef>
+              <!-- J'ajoute un attribut qui n'est pas  prévu par la TEI mais existe dans la TEI-->
+              <attDef ident="subtype" mode="add" ns="http://www.example.com/ns/nonTEI">
+                <!-- Je définis une liste de valeurs possibles et fermée -->
+                <valList mode="add" type="closed">
+                  <!-- les valeurs possibles -->
+                  <valItem ident="rimeA"/>
+                  <valItem ident="rimeB"/>
+                  <valItem ident="rimeC"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>
