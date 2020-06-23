@@ -1,0 +1,25 @@
+<body type="receuil">
+    <!-- Commentaire -->
+    <div type="poeme">
+        <head>La belle Matineuse</head>
+        <lg type="quatrain">
+            <l n="1">Des portes du matin l'Amante de Céphale</l>
+            <l n="2">Ses roses épandait dans le milieu des airs</l>
+            <l n="3">Et jetait sur les Cieux nouvellement ouverts</l>
+            <l n="4">Ses traits d'or et d'azur qu'en naissant elle étale</l>
+        </lg>
+        <lg type="quatrain">
+            <l n="5">Quand la nymphe divine à mon repos fatale</l>
+            <l n="6">Apparut, et brilla de tant d'attraits divers</l>
+            <l n="7">Qu'il semblait qu'elle seule éclairait l'univers</l>
+            <l n="8">Et remplissait de feux la rive orientale.</l>
+        </lg>
+    </div>
+    <div type="autrePoeme">
+        <head>La belle Matineuse 2</head>
+        <lg type="couplet">
+            <l n="1">Le Soleil se hâtant pour la gloire des Cieux,</l>
+            <l n="2">Vint opposer sa flammze à l'éclat de ses yeux</l>
+        </lg>
+    </div>
+</body>
