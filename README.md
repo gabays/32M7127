@@ -24,6 +24,7 @@ Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
 * `Cours_07`: Réguler, documenter
 
 **BLOC 2: un peu plus loin**
+* `Cours_08`: D'autres types de texte, les entités nommées
 
 
 

@@ -29,8 +29,8 @@ Les projets proposent leur documentation
 ---
 ## Typologie des modification
 * Suppression d’éléments
-* Changement du noms d’éléments
-* Modifications d’un modèle de contenu
+* Changement du nom d’éléments
+* Modification d’un modèle de contenu
 * Modification d’une liste d’attributs ou de valeurs d’attributs, d’un type de contenu
 * Modification de l’appartenance à une classe
 * Ajout de nouveaux éléments
@@ -50,7 +50,7 @@ Si la personnalisation respecte ces deux règles, elle est dite
 
 Changements propres:
 * Suppression d’éléments
-* Modifications d’un modèle de contenu
+* Modification d’un modèle de contenu
 * Modification d’une liste d’attributs ou de valeurs d’attributs, d’un type de contenu
 * Modification de l’appartenance à une classe
 
@@ -59,6 +59,7 @@ Changement sale:
 
 Changement sale ou propre:
 * Ajout de nouveaux éléments (propre si ces nouveaux éléments appartiennent à un autre espace de nom).
+* Ajout de nouveaux attributs (pas trop sale s'ils ne sont pas autorisés sur un élément mais existent en TEI)
 
 ---
 ## Solutions simples
@@ -84,7 +85,7 @@ Les fichiers TEI commencent par trois informations:
 * La déclaration XML (Vert)
 * Le lien vers les schema (rouge) et les règles schématron (bleu)
 
-<img src="Cours_07_images/declarations.png" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 80%"/>
+<img src="Cours_07_images/declarations.png" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 100%"/>
 
 ---
 ## Un nouveau schéma

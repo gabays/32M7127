@@ -4,7 +4,7 @@ Formation Edition numérique
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_07_images/cc-by-sa.png">
+<img style="float: right; width: 20%;" src="../Cours_07_images/cc-by-sa.png">
 
 ---
 # Exercice
