@@ -20,16 +20,16 @@ Plus d'informations sur [Wikipedia](https://fr.wikipedia.org/wiki/Extensible_Mar
 ### Les principales règles
 
 Ce langage de balisage fonctionne de manière simple
-`XML
+```XML
     <élément attribut="valeur">donnée</élément>
-`
+```
 1. Un `<élément>` est entre chevrons
 2. Une `<balise>` doit être fermé `</balise>`
 3. Une `<balise1>` ne doit `<balise2>` pas être croisée `</balise1>` avec un autre `</balise2>`
 4. Une `<balise/>` peut être auto-fermante
 5. Un `<élément>` peut porter un `@attribut` (noté
 avec un `@`)
-6. L’@attribut` a une "valeur" (entre guillemets)
+6. L’`@attribut` a une "valeur" (entre guillemets)
 
 ---
 
@@ -60,7 +60,7 @@ Structure sous-jacente:
 
 ### XML comme langage structuré (par des balises)
 
-`XML
+```XML
 <document>
   <paragraphe>
     <phrase>
@@ -84,7 +84,7 @@ Structure sous-jacente:
     </phrase>
   </paragraphe>
 </document>
-`
+```
 ---
 
 ### Une question fondamentale
@@ -139,29 +139,31 @@ Ces vocabulaires peuvent d’ailleurs être exprimés avec d’autres langages
 
 Procédural
 
-`XML
+```XML
 On emploie <italique>a priori</italique> les italiques pour les
 locutions et termes empruntés à d’autres langues.
-`
+```
 Sémantique
 
-`XML
+```XML
 On emploie <locutionEtrangère>a priori</locutionEtrangère> les
 italiques…
-`
+```
+
 Sémantique II
-`XML
+
+```XML
 On emploie <latin>a priori</latin> les italiques...
-``
+```
 
 ---
 
 ### En TEI
 
-`XML
+```XML
 On emploie <foreign xml:lang="la">a priori</foreign> les
 italiques...
-`
+```
 
 ---
 
@@ -195,7 +197,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
 ---
 
 ### Modélisation: Structure logique
-`XML
+```XML
 <document>
   <paragraphe>
     <phrase>
@@ -208,13 +210,13 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
     </phrase>
    </paragraphe>
   </document>
-`
+```
 
 ---
 
 ### Modélisation: Structure physique
 
-`XML
+```XML
 <document>
   <pb n="1"/>
   On emploie a priori les italiques pour les termes
@@ -223,7 +225,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
   emploie les petites capitales pour les noms propres,
   comme Léopold Delisle ou Jules Quicherat.
 </document>
-`
+```
 
 ---
 
@@ -233,7 +235,7 @@ Attention, il est (presque) impossible de tout faire : il faut choisir !
 ---
 
 Faible granularité
-`XML
+```XML
 <document>
   <paragraphe>
     <phrase>
@@ -246,12 +248,12 @@ Faible granularité
     </phrase>
    </paragraphe>
 </document>
-`
+```
 
 ---
 
 Moyenne granularité
-`XML
+```XML
 <document>
   <paragraphe>
     <phrase>
@@ -265,19 +267,19 @@ Moyenne granularité
       <nom>Jules Quicherat</nom>.
     </phrase>
    </paragraphe>
-`
+```
 
 ---
 
 Forte granularité
-`XML
+```XML
 <document>
   <paragraphe>
     <phrase>
       <w lemme="on" POS="PROper">On<w/>
       <w lemme="employer" POS="VERcjg">emploie<w>
      ...
-`
+```
 
 ---
 ### Exercices
