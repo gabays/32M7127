@@ -1,6 +1,6 @@
 Formation Edition numérique
 
-# La correspondance et les entités nommées
+# La correspondance manuscrite et les entités nommées
 
 Simon Gabay
 
@@ -66,6 +66,58 @@ Pensez à utiliser des référentiels, plutôt qu'inventer vos propres identifia
 est peut-être le plus grand dramaturge français. Il est
 né à <placeName ref="#geonames:2988507">Paris</placeName>,
 en <placeName ref="#geonames:3017382">France</placeName>
+```
+---
+## Un référentiel personnel
+
+Certaines personnes ou lieux, trop inconnus, ne se trouvent pas dans les grands référentiels. Il peut donc être utile de développer le sien, ce que le `<teiHeader>` prévoit dans le `<profileDesc>` avec deux éléments:
+
+* `<particDesc>` permet de décrire les participants d'une interaction linguistique et permet de contenir un `<listPerson>`
+* `<settingDesc>` permet de décrire le contexte d'une interaction linguistique, et peut donc contenir un `<listPlace>`
+
+Dans le cas où le contenu de ces index locorum et nominum se retrouve dans une multitude de fichiers, il peut être utile d'en faire un fichier à part, vers lesquels pointent tous les autres.
+
+---
+## `<listPerson>`
+Il est possible d'encoder une liste de personnes.
+
+```xml
+<listPerson>
+  <person>
+    <persName>
+      <forename>Jean</forename> 
+      <surname>Racine</surname> 
+    </persName>
+    <birth>
+      <date when="1639"/>
+      <place>La Ferté-Milon</place>
+    </birth>
+    <death>
+      <date when="1699"/>
+      <place>Paris</place>
+    </death>
+    <occupation>Dramaturge</occupation>
+  </person>
+  <person>…</person>
+</listPerson> 
+```
+
+---
+## `<listPlace>`
+Il est possible d'encoder une liste de lieux.
+
+```xml
+<listPlace>
+  <place>
+    <placeName>Genève</placeName>
+    <region>Canton de Genève</region>
+    <country>Suisse</country>
+    <location>
+      <geo>46.20222, 6.14569</geo>
+    </location>
+  </place>
+  <place>…</place>
+</listPlace> 
 ```
 
 ---
@@ -167,4 +219,35 @@ Dans les deux cas on peut encoder toutes les informations nécessaires (lieu, pe
         <persName ref="#id3">M. d'Hacqueville</persName>
     </correspAction>
 </correspDesc>
+```
+
+
+---
+## `profileDesc`
+
+```xml
+<profileDesc>
+   <particDesc>
+      <listPerson>
+         <person corresp="isni:…">
+            …
+         </person>
+      </listPerson>
+   </particDesc>
+   <settingDesc>
+      <listPlace>
+         <place corresp="geonames:…">
+            …
+         </place>
+      </listPlace>
+   </settingDesc>
+   <correspDesc>
+      <correspAction type="sent">
+        …
+      </correspAction>
+      <correspAction type="received">
+        …
+      </correspAction>
+   </correspDesc>
+</profileDesc>
 ```
