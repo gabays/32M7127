@@ -40,6 +40,7 @@ Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
 
 Vous devez installer:
 
+* Un éditeur de code source comme _Sublime_ [[ici](https://www.sublimetext.com)] ou _Brackets_ [[ici](http://brackets.io)]
 * _Oxygen_ [[ici](https://www.oxygenxml.com/)]
 * _TXM_ [[ici](http://textometrie.ens-lyon.fr/spip.php?article60&lang=fr)]
 
