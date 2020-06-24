@@ -33,8 +33,7 @@ Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
 
 **BLOC 3: production, exploitation**
 * `Cours_13`: La reconnaissance optique de caractères
-* `Cours_14`: L'annotation linguistique
-* `Cours_15`: Exploration textométrique
+* `Cours_14`: Exploration textométrique
 
 ## Logiciels
 
