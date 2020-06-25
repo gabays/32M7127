@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="andromaque_1668">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage d'Andromaque de Racine</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author><forename>Jean</forename> <surname>Racine</surname></author>
+               <title>Andromaque, tragédie</title>
+               <publisher>T. Girard</publisher>
+               <pubPlace>Paris</pubPlace>
+               <date>1668</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     
+     <front>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f5.image"/>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f6.image"/>
+        
+        <titlePage>
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f7.image"/>
+           
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>ANDROMAQVE,
+              </titlePart>
+              
+              <titlePart type="sub">
+                 <lb/><hi rend="italic">TRAGEDIE.</hi>
+              </titlePart>
+           </docTitle>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/title_fleuron.jpg"/>
+              <desc>Fleuron</desc>
+           </figure>
+           
+           <docImprint>
+              <lb/>A <pubPlace>PARIS,</pubPlace>
+              <lb/>Chez <publisher>THEODORE GIRARD</publisher>, dans <placeName>la grand'
+                 <lb/>Salle du Palais, du coſté de la Cour
+                 <lb/>des Aydes, à l'Enuie.</placeName>
+              <!-- ligne -->
+              <lb/><docDate when="1668">M. DC. LXVIII.</docDate>
+              <lb/><hi rend="italic">AVEC PRIVILEGE DV ROY.</hi>
+           </docImprint>
+           
+        </titlePage>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f8.image"/>
+        
+        <div type="epistle" subtype="dedication" xml:id="aMadame">
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f9.image"/>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/dedication_headpiece.jpg"/>
+              <desc>Bandeau de l'épître dédicatoire</desc>
+           </figure>
+           
+           <head rend="center">
+              <lb/>A
+              <lb/>Madame
+           </head>
+           <note>La destinataire de la lettre est Henriette d'Angleterre (1644-†1670), épouse de Monsieur le frère du roi.</note>
+           
+           <opener>
+              <hi rend="intial" facs="Ex_theatre_images/dedication_initial">M</hi>
+              <hi rend="italic">ADAME</hi>,
+           </opener>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Ce n’eſt pas ſans sujet que 
+              <lb/>ie mets voſtre illuſtre Nom à
+              
+              <fw type="sig">ã ij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f10.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>la teſte de cét Ouurage. Et de 
+              <lb/>quel autre nom pourrois-ie eſ-
+              <lb break="no"/>bloüir les yeux de mes Lecteurs, 
+              <lb/>que de celuy dont mes Specta-
+              <lb break="no"/>teurs ont eſté ſi heureuſement 
+              <lb/>eſbloüis? On ſçauoit que
+              <lb/>VOSTRE ALTESSE
+              <lb/>ROYALE auoit daigné pren-
+              <lb break="no"/>dre ſoin de la conduite de ma 
+              <lb/>Tragedie. On ſçauoit que vous 
+              <lb/>m’auiez preſté quelques-vnes 
+              <lb/>de vos lumieres, pour y adjoû-
+              <lb break="no"/>ter de nouueaux ornemens. On 
+              <lb/>ſçauoit enfin que vous l’auiez 
+              <lb/>honnorée de quelques larmes, 
+              <lb/>dés la premiere lecture que ie 
+              <lb/>vous en fis. Pardonnez-moy,
+              <lb/>MADAME, ſi i’oſe me
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f11.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>vanter de cét heureux commen-
+              <lb break="no"/>cement de ſa deſtinée. Il me con-
+              <lb break="no"/>ſole bien glorieuſement de la du-
+              <lb break="no"/>reté de ceux qui ne voudroient 
+              <lb/>pas s’en laiſſer toucher. Ie leur 
+              <!-- Title sans @rend="italic" -->
+              <lb/>permets de condamner l’<title>Andro-
+              <lb break="no"/>maque</title> tant qu’ils voudront, 
+              <lb/>pourueû qu’il me ſoit permis 
+              <lb/>d’apeller de toutes les ſubtili-
+              <lb break="no"/>tez de leur eſprit, au Cœur de 
+              <lb/>V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Mais, MADAME, ce
+              <lb/>n’eſt pas ſeulement du cœur que
+              <lb/>vous iugez de la bonté d’vn
+              <lb/>Ouurage, c’eſt auec vne intel-
+              <lb break="no"/>ligence, qu’aucune fauſſe lueur
+              <lb/>ne ſçauroit tromper. Pouuons-
+              <lb/>nous mettre ſur la Scene vne
+              
+              <fw type="sig">ã iij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f12.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Hiſtoire que vous ne poſſediez
+              <lb/>außi bien que Nous? Pouuons- 
+              <lb/>nous faire joüer vne intrigue, 
+              <lb/>dont vous ne penetriez tous les 
+              <lb/>reſſorts? Et pouuons-nous con-
+              <lb break="no"/>ceuoir des ſentimens ſi nobles 
+              <lb/>&amp; ſi delicats, qui ne ſoient in-
+              <lb/>finiment au deſſous de la no-
+              <lb break="no"/>bleſſe &amp; de la delicateſſe de vos 
+              <lb/>penſées?
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>On ſçait, MADAME,
+              <lb/>&amp; V. A. R. a beau s’en ca-
+              <lb break="no"/>cher, que dans ce haut degré 
+              <lb/>de gloire où la Nature &amp; la 
+              <lb/>Fortune ont pris plaiſir de vous
+              <lb/>eſleuer, Vous ne dédaignez 
+              <lb/>pas cette gloire obſcure que les 
+              <lb/>gens de lettres s’eſtoient reſer-
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f13.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb break="no"/>uée. Et il ſemble que vous
+              <lb/>ayez voulu auoir autant d’a-
+              <lb break="no"/>uantage ſur noſtre Sexe par les 
+              <lb/>connoiſſances &amp; par la ſolidité 
+              <lb/>de voſtre eſprit, que vous ex-
+              <lb break="no"/>cellez dans le voſtre par toutes 
+              <lb/>les graces qui vous enuironnent. 
+              <lb/>La Cour vous regarde comme 
+              <lb/>l’Arbitre de tout ce qui ſe fait 
+              <lb/>d’agreable. Et nous qui tra-
+              <lb break="no"/>uaillons pour plaire au public,
+              <lb/>nous n’auons plus que faire de 
+              <lb/>demander aux Sçauans ſi nous 
+              <lb/>trauaillons ſelon les Regles. La 
+              <lb/>Regle ſouueraine, eſt de plaire
+              <lb/>à V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Voila ſans doute la moin-
+              <lb break="no"/>dre de vos excellentes qualitez.
+              
+              <fw type="sig">ã iij</fw>
+              <note type="sic">ã iv</note>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f14.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Mais, MADAME, c’eſt la
+              <lb/>ſeule dont i’ay pû parler auec 
+              <lb/>quelque connoiſſance; les autres 
+              <lb/>ſont trop éleuées au deſſus de 
+              <lb/>moy. Ie n’en puis parler ſans les 
+              <lb/>rabaiſſer par la foibleſſe de mes 
+              <lb/>penſées, &amp; ſans ſortir de la 
+              <lb/>profonde veneration auec la-
+              <lb break="no"/>quelle ie ſuis,
+           </p>
+           
+           <closer>
+              <salute>
+                 <lb rend="indent"/><hi rend="italic">MADAME</hi>,
+                 <lb/>DE VOSTRE ALTESSE ROYALE,
+                 <lb/>Le tres-humble, tres-obeïſ-
+                 <lb break="no"/>ſant, &amp; tres-fidelle ſerui-
+                 <lb break="no"/>teur, </salute><signed><persName>RACINE</persName></signed>.
+           </closer>
+        </div>
+        
+        <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f15.image"/>
+
+        <div xml:id="foreword">
+           <figure>
+              <graphic url="Ex_theatre_images/foreword_headpiece.jpg"/>
+              <desc>Bandeau de la preface</desc>
+           </figure>
+           
+           <head rend="center">
+              <lb/>VIRGILE
+              <lb/>AU TROISIESME LIVRE
+              <lb/>DE L'ENEIDE.
+           </head>
+
+           <p rend="center">
+              <lb/>C’eſt Énée qui parle.
+           </p>
+           <lg>
+              <l>
+                 <hi rend="initial" facs="Ex_theatre_images/foreword_initial.jpg">L</hi>
+                 ittoraque Epeiri legimus, portuque <lb/>ſubimus</l>
+              <l>Chaonio, &amp; celſam Buthroti aſcen-<lb break="no"/>dimus Vrbem.</l>
+              <l>Sollemnes tum forte dapes, &amp; triſtia dona</l>
+              <l>Libabat cineri Andromache, Maneſque vo-<lb break="no"/>cabat</l>
+              <l><choice><abbr>Hectoreū</abbr><expan>Hectoreum</expan></choice> ad <choice><abbr>tumulū</abbr><expan>tumulum</expan></choice>, viridi quem ceſpite <choice><abbr>inanē</abbr><expan>inanem</expan></choice>,</l>
+              <l>Et geminas, <choice><abbr>causā</abbr><expan>causam</expan></choice> lachrymis, ſacrauerat Aras…</l>
+              <l>Dejecit vultum, &amp; demiſsâ voce locuta eſt.</l>
+              <l>O felix vna ante alias Priameïa Virgo,</l>
+              <l>Hoſtilem ad tumulum, <placeName ref="#troie">Trojæ</placeName> ſub mœnibus altis</l>
+              <l>Iuſſa mori! quæ ſortitus non pertulit vllos,</l>
+              <l>Nec victoris heri tetigit Captiua cubile.</l>
+              <l>Nos patria incenſa; diuerſa per æquora, vectæ,</l>
+              <l>Stirpis Achilleæ faſtus, Iuuenemque ſuperbum</l>
+              <l>Seruitio enixæ tulimus, qui deinde ſecutus</l>
+              <l>Ledæam Hermionem, Lacedæmonioſque hy-<lb break="no"/>menæos…</l>
+              
+              <fw type="sig">ã v</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f16.image"/>
+              
+              <l>Aſt illum, ereptæ magno inflammatus amore</l>
+              <l>Conjugis, &amp; ſcelerum Furiis agitatus, Oreſtes</l>
+              <l>Excipit incautum, patriaſque obtruncat ad <lb/>Aras.</l>
+           </lg>
+           
+           <p>
+              <lb rend="indent"/>Voila en peu de Vers tout le ſujet de cette
+              <lb/>Tragedie. Voila le lieu de la Scene, l’Action
+              <lb/>qui s’y paſſe, les quatre principaux Acteurs, &amp;
+              <lb/>meſme leurs Caracteres. Excepté celuy <persName ref="#hermione">d’Her-
+                 <lb break="no"/>mionne</persName>, dont la jalouſie &amp; les emportemens
+              <lb/>ſont aſſez marquez dans l’<title>Andromaque</title> d’<persName ref="#euripide">Eu-
+                 <lb break="no"/>ripide</persName>.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Mais veritablement mes Perſonnages ſont
+              <lb/>ſi fameux dans l’Antiquité, que pour peu qu’on
+              <lb/>la connoiſſe, on verra fort bien que je les ay
+              <lb/>rendus tels, que les anciens Poëtes nous les ont
+              <lb/>donnez. Auſſi n’ay-je pas penſé qu’il me fuſt
+              <lb/>permis de rien changer à leurs mœurs. Toute
+              <lb/>la liberté que j’ay priſe, ç’a eſté d’adoucir vn
+              <lb/>peu la férocité de <persName ref="#pyrrhus">Pyrrhus</persName>, que <persName ref="#seneque">Seneque</persName>, dans
+              <lb/>ſa <title>Troade</title>, &amp; <persName ref="#virgile">Virgile</persName>, dans le ſecond de l’<title>E-
+                 <lb break="no"/>neïde</title>, ont pouſſée beaucoup plus loin que je
+              <lb/>n’ay crû le deuoir faire.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Encore s’eſt-il trouué des gens qui ſe ſont
+              <lb/>plaints qu’il s’emportaſt contre <persName ref="#andromaque">Andromaque</persName>,
+              <lb/>&amp; qu’il vouluſt épouſer cette Captiue à quel-
+              <lb break="no"/>que prix que ce fuſt. I’auouë qu’il n’eſt pas aſ-
+              <lb break="no"/>ſez reſigné à la volonté de ſa Maiſtreſſe, &amp; que
+              <lb/>Celadon a mieux connu que luy le parfait
+              <lb/>Amour. Mais que faire? <persName ref="#pyrrhus">Pyrrhus</persName> n’auoit pas
+              <lb/>lû nos Romans. Il eſtoit violent de ſon natu-
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f17.image"/>
+              
+              <lb break="no"/>rel. Et tous les Heros ne ſont pas faits pour
+              <lb/>eſtre des <persName>Celadons</persName>.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Quoy qu’il en ſoit, le public m’a eſté trop
+              <lb/>fauorable pour m’embarraſſer du chagrin par-
+              <lb break="no"/>ticulier de deux ou trois perſonnes qui vou-
+              <lb break="no"/>droient qu’on reformaſt tous les Heros de
+              <lb/>l’Antiquité pour en faire des Heros parfaits.
+              <lb/>Ie trouue leur intention fort bonne, de vou-
+              <lb break="no"/>loir qu’on ne mette ſur la Scene que des hom-
+              <lb break="no"/>mes impeccables. Mais je les prie de ſe ſouue-
+              <lb break="no"/>nir que ce n’est pas à moy de changer les re-
+              <lb break="no"/>gles du Theatre. <persName ref="#horace">Horace</persName> nous recommande
+              <lb/>de dépeindre <persName ref="#achille">Achile</persName>, farouche, inexorable,
+              <lb/>violent, tel qu’il eſtoit, &amp; tel qu’on dépeint
+              <lb/>ſon fils. Et <persName ref="#aristote">Ariſtote</persName>, bien éloigné de nous de-
+              <lb break="no"/>mander des Heros parfaits, veut au contraire
+              <lb/>que les Perſonnages tragiques, c’eſt à dire,
+              <lb/>ceux dont le mal-heur fait la cataſtrophe de la
+              <lb/>Tragedie, ne ſoient ny tout à fait bons, ny
+              <lb/>tout à fait méchans. Il ne veut pas qu’ils ſoient
+              <lb/>extremément bons, parce que la punition d’vn
+              <lb/>homme de bien exciteroit plûtoſt l’indigna-
+              <lb break="no"/>tion, que la pitié du ſpectateur; ny qu’ils ſoient
+              <lb/>méchans auec excés, parce qu’on n’a point
+              <lb/>pitié d’un ſcelerat. Il faut donc qu’ils ayent
+              <lb/>vne bonté mediocre, c’eſt à dire, vne vertu
+              <lb/>capable de foibleſſe, &amp; qu’ils tombent dans
+              <lb/>le mal-heur par quelque faute qui les faſſe
+              <lb/>plaindre ſans les faire déteſter.
+           </p>
+        </div>
+        
+        <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f18.image"/>
+        
+        <div xml:id="castList">
+           
+           <figure>
+              <graphic url="Ex_theatre_images/castList_headpiece.jpg"/>
+              <desc>Bandeau de la distribution</desc>
+           </figure>
+           
+           <head rend="center"><hi rend="italic">ACTEVRS</hi>.</head>
+           <castList>
+              <lb/><castItem xml:id="andromaque"><role>ANDROMAQUE</role>, <roleDesc>Veuve d’Hector, Captive de Pyrrhus.</roleDesc></castItem>
+              <lb/><castItem xml:id="pyrrhus"><role>PYRRHUS</role>, <roleDesc>Fils d’Achille, Roy d’Epire</roleDesc>.</castItem>
+              <lb/><castItem xml:id="oreste"><role>ORESTE</role>, <roleDesc>Fils d’Agamemnon</roleDesc>.</castItem>
+              <lb/><castItem xml:id="hermione"><role>HERMIONNE</role>, <roleDesc>Fille d’Helene, accordée avec Pyrrhus</roleDesc>.</castItem>
+              <lb/><castItem xml:id="pylade"><role>PYLADE</role>, <roleDesc>Amy d’Oreste</roleDesc>.</castItem>
+              <lb/><castItem xml:id="cleone"><role>CLEONE</role>, <roleDesc>Confidente d’Hermione</roleDesc>.</castItem>
+              <lb/><castItem xml:id="cephise"><role>CEPHISE</role>, <roleDesc>Confidente d’Andromaque</roleDesc>.</castItem>
+              <lb/><castItem xml:id="phoenix"><role>PHOENIX</role>, <roleDesc>Gouverneur d’Achille, &amp; ensuite de Pyrrhus</roleDesc>.</castItem>
+              <lb/><castItem xml:id="suite_oreste"><role>Suite d’ORESTE</role>.</castItem>
+           </castList>    
+        </div>
+        
+        <set rend="center">
+           <p rend="italic">La Scene est à <placeName ref="#buthrot">Buthrot</placeName>, ville d’<placeName ref="#epire">Epire</placeName>, dans une Salle du Palais de <persName ref="#pyrrhus">Pyrrhus</persName>.</p>
+        </set>
+     </front>
+     
+      <body>
+         <div type="play">
+            
+            <gap reason="sampling"/>
+            
+            <div type="act" n="3" xml:id="A3">
+               <pb n="38" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f56.image"/>
+               
+               <fw type="pageNum" place="top-left">38</fw>
+
+               <figure>
+                  <graphic url="Ex_theatre_images/A3_headpiece.jpg"/>
+                  <desc>Bandeau de l'acte III</desc>
+               </figure>
+               
+               <head rend="center">ACTE III.</head>
+               
+               <div type="scene" n="1" xml:id="A3S1">
+                  <head rend="center">SCENE PREMIERE.</head>
+                  <stage>ORESTE, PYLADE</stage>
+                  
+                  <sp who="#pylade" xml:id="A3S1_1">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="713" xml:id="v713"><hi rend="initial" facs="Ex_theatre_images/A3S1_initial.jpg">M</hi>oderez donc, Seigneur, cette fureur <lb/>extréme.</l>
+                        <l n="714" xml:id="v714">Ie ne vous connoy plus. Vous n’eſtes plus <lb/>vous-meſme.</l>
+                        <l n="715" xml:id="v715" part="I">Souffrez…</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_2">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="715" part="F">Non, tes conſeils ne ſont plus de ſaiſon,</l>
+                        <l n="716" xml:id="v716"><persName ref="#pylade">Pylade</persName>, ie ſuis las d’écouter la raiſon.</l>
+                        <l n="717" xml:id="v717">C’eſt traiſner trop long-temps ma vie &amp; mon ſup-<lb/>plice.</l>
+                        <l n="718" xml:id="v718">Il faut que ie l’enleue, ou bien que ie periſſe.</l>
+                        <l n="719" xml:id="v719">Le deſſein en eſt pris, ie le veux acheuer.</l>
+                        <l n="720" xml:id="v720" part="I">Oüy ie le veux.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_3">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="720" part="F">Hé bien, il la faut enleuer.</l>
+                        <l n="721" xml:id="v721">I’y conſens. Mais ſongez cependant où vous eſtes.</l>
+                        <l n="722" xml:id="v722">Que croira-t’on de vous à voir ce que vous faites?</l>
+                  
+                        <pb n="39" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f57.image"/>
+                        
+                        <fw type="header" place="center">TRAGEDIE.</fw>   
+                        <fw type="pageNum" place="top-right">39</fw>
+                        
+                        <l n="723" xml:id="v723">Faites taire, Seigneur, ce tranſport inquiet.</l>
+                        <l n="724" xml:id="v724">Commandez à vos yeux de garder le ſecret.</l>
+                        <l n="725" xml:id="v725">Ces Gardes, cette Cour, l’air qui vous enuironne,</l>
+                        <l n="726" xml:id="v726">Tout dépend de <persName ref="#pyrrhus">Pyrrhus</persName>, &amp; ſur tout d’<persName ref="#hermione">Hermionne</persName></l>
+                        <l n="727" xml:id="v727">A ſes regards ſur tout cachez voſtre courroux.</l>
+                        <l n="728" xml:id="v728">O dieux! en cet eſtat pourquoy la cherchiez-vous?</l>
+                        
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_4">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="729" xml:id="v729">Que ſçay-je? De moy-meſme eſtois-je alors le <lb/>maiſtre?</l>
+                        <l n="730" xml:id="v730">La fureur m’emportoit, &amp; ie venois peut-eſtre</l>
+                        <l n="731" xml:id="v731">Menaſſer à la fois l’Ingrate &amp; ſon Amant.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_5">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="732" xml:id="v732">Et quel eſtoit le fruit de cet emportement?</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_6">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="733" xml:id="v733">Et quelle ame, dy-moy, ne ſeroit éperduë</l>
+                        <l n="734" xml:id="v734">Du coup dont ma raiſon vient d’eſtre confonduë?</l>
+                        <l n="735" xml:id="v735">Il épouſe, dit-il, <persName ref="#hermione">Hermionne</persName> demain.</l>
+                        <l n="736" xml:id="v736">Il veut pour m’honorer la tenir de ma main.</l>
+                        <l n="737" xml:id="v737">Ah! pluſtoſt cette main dans le ſang du Barbare…</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_7">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="738" xml:id="v738">Vous l’accuſez, Seigneur, de ce deſtin bizare.</l>
+                        <l n="739" xml:id="v739">Cependant tourmenté de ſes propres deſſeins,</l>
+                        <l n="740" xml:id="v740">Il eſt peut-eſtre à plaindre, autant que ie vous <lb/>plains.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_8">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="741" xml:id="v741">Non, non, ie le connoy, mon deſeſpoir le flate</l>
+                        <l n="742" xml:id="v742">Sans moy, ſans mon amour il dédaignoit l’Ingrate</l>
+                        
+                        <pb n="40" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f58.image"/>
+                        
+                        <fw type="pageNum" place="top-left">40</fw>
+                        <fw type="header" place="center">ANDROMAQVE</fw>
+                        
+                        <l n="743" xml:id="v743">Ses charmes iuſques-là n’auoient pû le toucher.</l>
+                        <l n="744" xml:id="v744">Le Cruel ne la prend que pour me l’arracher.</l>
+                        <l n="745" xml:id="v745">Ah dieux! c’en eſtoit fait. <persName ref="#hermione">Hermionne</persName> gagnée</l>
+                        <l n="746" xml:id="v746">Pour iamais de ſa veuë alloit eſtre éloignée.</l>
+                        <l n="747" xml:id="v747">Son cœur entre l’amour &amp; le dépit confus.</l>
+                        <l n="748" xml:id="v748">Pour ſe donner à moy n’attendoit qu’vn refus.</l>
+                        <l n="749" xml:id="v749">Ses yeux s’ouuroient, <persName ref="#pylade">Pylade</persName>. Elle écoutoit <persName ref="#oreste">Oreſte</persName>,</l>
+                        <l n="750" xml:id="v750">Luy parloit, le plaignoit. Vn mot euſt fait le reſte.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_9">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="751" xml:id="v751" part="I">Vous le croyez.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_10">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="751" part="F">Hé quoy? ce courroux enflammé</l>
+                        <l n="752" xml:id="v752" part="I">Contre vn Ingrat…</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_11">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="752" part="F">Iamais il ne fut plus aimé.</l>
+                        <l n="753" xml:id="v753">Penſez-vous, quand <persName ref="#pyrrhus">Pyrrhus</persName> vous l’auroit accordée,</l>
+                        <l n="754" xml:id="v754">Qu’vn prétexte tout preſt ne l’euſt pas retardée?</l>
+                        <l n="755" xml:id="v755">M’en croirez-vous? Laſſé de ſes trompeurs attraits,</l>
+                        <l n="756" xml:id="v756">Au lieu de l’enleuer, Seigneur, ie la fuirais.</l>
+                        <l n="757" xml:id="v757">Quoy? Voſtre amour ſe veut charger d’vne Furie</l>
+                        <l n="758" xml:id="v758">Qui vous déteſtera, qui toute voſtre vie</l>
+                        <l n="759" xml:id="v759">Regrettant vn hymen tout preſt à s’acheuer,</l>
+                        <l n="760" xml:id="v760" part="I">Voudra…</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_12">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="760" part="F">C’eſt pour cela que ie veux l’enleuer.</l>
+                        <l n="761" xml:id="v761">Tout luy riroit, <persName ref="#pylade">Pylade</persName>, &amp; moy, pour mon partage,</l>
+                        <l n="762" xml:id="v762">Ie n’emporterois donc qu’vne inutile rage?</l>
+                        <l n="763" xml:id="v763">I’irois loin d’elle encor, taſcher de l’oublier?</l>
+                        <l n="764" xml:id="v764">Non, non, à mes tourmens ie veux l’aſſocier.</l>
+                        <l n="765" xml:id="v765">C’eſt trop gémir tout ſeul. Ie ſuis las qu’on me <lb/>plaigne.</l>
+                        <l n="766" xml:id="v766">Ie prétens qu’à mon tour l’Inhumaine me craigne,</l>
+                        
+                        <pb n="41" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f59.image"/>
+                        
+                        <fw type="header" place="center">TRAGEDIE.</fw>   
+                        <fw type="pageNum" place="top-right">41</fw>
+                        
+                        <l n="767" xml:id="v767">Et que ſes Yeux cruels à pleurer condannez<note type="lang">nn</note>,</l>
+                        <l n="768" xml:id="v768">Me rendent tous les noms, que ie leur ay donnez.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_13">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="769" xml:id="v769">Voila donc le ſuccez qu’aura voſtre Ambassade,</l>
+                        <l n="770" xml:id="v770" part="I">Oreſte rauiſſeur.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_14">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="770" part="F">Et qu’importe, <persName ref="#pylade">Pylade</persName>?</l>
+                        <l n="771" xml:id="v771">Quand nos Eſtats vangez jouïront de mes ſoins,</l>
+                        <l n="772" xml:id="v772">L’Ingrate de mes pleurs jouïra-t’elle moins?</l>
+                        <l n="773" xml:id="v773">Et que me ſeruira que la Gréce m’admire</l>
+                        <l n="774" xml:id="v774">Tandis que ie ſeray la fable de l’Epire?</l>
+                        <l n="775" xml:id="v775">Que veux-tu? Mais, s’il faut ne te rien déguiſer,</l>
+                        <l n="776" xml:id="v776">Mon Innocence enfin commence à me peſer.</l>
+                        <l n="777" xml:id="v777">Ie ne ſçay de tout temps quelle injuſte Puiſſance</l>
+                        <l n="778" xml:id="v778">Laiſſe le Crime en paix, &amp; pourſuit l’Innocence.</l>
+                        <l n="779" xml:id="v779">De quelque part ſur moy que ie tourne les yeux,</l>
+                        <l n="780" xml:id="v780">Ie ne voy que malheurs qui condannent<note>nn</note> les Dieux.</l>
+                        <l n="781" xml:id="v781">Meritons leur courroux, juſtifions leur haine,</l>
+                        <l n="782" xml:id="v782">Et que le fruit du Crime en précede la peine.</l>
+                        <l n="783" xml:id="v783">Mais toy, par quelle erreur veux-tu toûjours ſur toy</l>
+                        <l n="784" xml:id="v784">Deſtourner vn courroux qui ne cherche que moy?</l>
+                        <l n="785" xml:id="v785">Aſſez &amp; trop long-temps mon amitié t’accable.</l>
+                        <l n="786" xml:id="v786">Euite vn Malheureux, abandonne vn Coupable.</l>
+                        <l n="787" xml:id="v787">Cher <persName ref="#pylade">Pylade</persName>, croy-moy, mon tourment me ſuffit.</l>
+                        <l n="788" xml:id="v788">Laiſſe-moy des perils dont j’attens tout le fruit.</l>
+                        <l n="789" xml:id="v789">Porte aux Grecs cet Enfant que <persName ref="#pyrrhus">Pyrrhus</persName> m’abandonne.</l>
+                        <l n="790" xml:id="v790" part="I">Va-t’en.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_15">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="790" part="F">Allons, Seigneur, enleuons <persName ref="#hermione">Hermionne</persName>.</l>
+                        <l n="791" xml:id="v791">Au trauers des perils vn grand Cœur ſe fait iour.</l>
+                        <l n="792" xml:id="v792">Que ne peut l’amitié conduite par l’amour?</l>
+                        
+                        <pb n="42" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f60.image"/>
+                        
+                        <fw type="pageNum" place="top-left">42</fw>
+                        <fw type="header" place="center">ANDROMAQVE</fw>
+                        
+                        <l n="793" xml:id="v793">Allons de tous vos Grecs encourager le zele.</l>
+                        <l n="794" xml:id="v794">Nos vaiſſeaux ſont tous preſts, &amp; le vent nous <lb/>appelle.</l>
+                        <l n="795" xml:id="v795">Ie ſçay de ce Palais tous les détours obſcurs.</l>
+                        <l n="796" xml:id="v796">Vous voyez que la Mer en vient battre les Murs.</l>
+                        <l n="797" xml:id="v797">Et cette Nuit ſans peine vne ſecrette voye,</l>
+                        <l n="798" xml:id="v798">Iuſqu’en voſtre vaiſſeau conduira voſtre Proye.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_16">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="799" xml:id="v799">I’abuſe, cher Amy, de ton trop d’amitié.</l>
+                        <l n="800" xml:id="v800">Mais pardonne à des maux, dont toy ſeul as pitié.</l>
+                        <l n="801" xml:id="v801">Excuſe vn Malheureux, qui perd tout ce qu’il aime,</l>
+                        <l n="802" xml:id="v802">Que tout le monde hait, &amp; qui ſe hait luy-meſme.</l>
+                        <l n="803" xml:id="v803">Que ne puis-je à mon tour, dans vn ſort plus heu-<lb/>reux…</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#pylade" xml:id="A3S1_17">
+                     <speaker rend="center">PYLADE.</speaker>
+                     <lg>
+                        <l n="804" xml:id="v804">Diſſimulez, Seigneur, c’eſt tout ce que ie veux.</l>
+                        <l n="805" xml:id="v805">Gardez qu’auant le coup voſtre deſſein n’éclate.</l>
+                        <l n="806" xml:id="v806">Oubliez iuſque-là qu’<persName ref="#hermione">Hermionne</persName> eſt ingrate.</l>
+                        <l n="807" xml:id="v807">Oubliez voſtre amour. Elle vient, ie la voy.</l>
+                     </lg>
+                  </sp>
+                  
+                  <sp who="#oreste" xml:id="A3S1_18">
+                     <speaker rend="center">ORESTE.</speaker>
+                     <lg>
+                        <l n="808" xml:id="v808">Va-t’en. Répons-moy d’elle, &amp; ie répons de moy.</l>
+                     </lg>
+                  </sp>
+                  
+                  <figure>
+                     <graphic url="Ex_theatre_images/A3S1_tailpiece.jpg"/>
+                     <desc>Cul-de.lampe de l'acte III, Scène 1</desc>
+                  </figure>
+                  
+                  <!-- Fin de la scène -->
+               </div> 
+               
+               <!-- Fin de l'acte -->
+               
+            </div>
+            
+            <!-- Fin de la pièce -->
+         </div>
+      </body>
+  </text>
+</TEI>
