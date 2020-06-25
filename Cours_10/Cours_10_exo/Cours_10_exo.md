@@ -17,6 +17,8 @@ Pour rappel, la déclaration xml qui sert à relier mon fichier XML à mon CSS e
 <?xml-stylesheet type="text/css" href="mon/chemin/vers/mon.css"?>
 ```
 
+Solution: ouvrez `Cours_10_exo_corr.xml` dans Oxygen en mode auteur, ou dans un navigateur.
+
 ---
 ## Exercice 2
 
@@ -32,3 +34,5 @@ Rappel: pour lier une feuille css à un document HTML, le code est le suivant:
 ```xml
 <link rel="stylesheet" type="text/css" href="mon/chemin/vers/mon.css">
 ```
+
+Solution: ouvrez `Cours_10_corr.html` dans Oxygen en mode auteur, ou dans un navigateur.

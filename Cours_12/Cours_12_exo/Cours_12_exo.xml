@@ -22,7 +22,7 @@
             <head>Sonetz</head>
             <lg type="quatrain">
                <l>QVI voudra voyr comme vn Dieu me ſurmonte,</l>
-               <l>Comme il m'aſſault, comme il ſe fait vainqueur:</l>
+               <l>Comme il m'aſſault, comme il ſe <subst><del rend="strikethrough">déclare</del><add>fait</add></subst> vainqueur:</l>
                <l>Comme il r'enflamme, &amp; et renglace mon cuœur,</l>
                <l>Comme il reçoit un hõnneur de ma honte.</l>
             </lg>
@@ -39,6 +39,11 @@
             </lg>
             <lg>
                <l>Et ſi voirra que ie ſuis trop heureux,</l>
+               <l>D'auoir au flanc l'aiguillon amoureux,</l>
+               <l>Plein du venin dont il fault que ie meure.</l>
+            </lg>
+            <lg>
+               <l>bla blablabla blablabla blablabla blablabla blabla</l>
                <l>D'auoir au flanc l'aiguillon amoureux,</l>
                <l>Plein du venin dont il fault que ie meure.</l>
             </lg>

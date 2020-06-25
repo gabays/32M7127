@@ -1,7 +1,26 @@
-body{background-color: grey;}
+body{
+  background-color: grey;
+}
 
-h1 {color:red;}
+h1 {
+  color:red;
+}
 
-p{font-style: italic;
-margin-left:30px;}
+p{
+  font-style: italic;
+  margin-left:30px;
+}
+
+.del{
+  color:red;
+  text-decoration: line-through;
+}
+
+.add{
+  color:green;
+}
+
+.subst{
+  font-style: normal
+}
 

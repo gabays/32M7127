@@ -41,7 +41,25 @@
 
     <xsl:template match="l">
         <xsl:apply-templates/><br/>
-
     </xsl:template>
+
+    <xsl:template match="del">
+        <span class="del">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="add">
+        <span class="add">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="subst">
+        <span class="subst">
+        [<xsl:apply-templates/>]
+        </span>
+    </xsl:template>
+
 </xsl:stylesheet>
 
