@@ -1,0 +1,20 @@
+body{
+    background-color: grey;
+}
+
+head{
+    color:red;
+    text-align: center;
+}
+
+lg{font-style: italic;
+    margin-left:30px;
+    margin-top: 10px;}
+
+teiHeader{
+    visibility: hidden;
+}
+
+l{
+    display:block;
+}
