@@ -1,6 +1,6 @@
 Formation Edition numérique
 
-# L'annotation critique
+# Vers la publication web
 
 Simon Gabay
 
