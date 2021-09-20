@@ -3,13 +3,10 @@
 
 ## Programme
 
-Les cours ont lieu sur zoom: https://unige.zoom.us/j/91106764601
+Les cours ont lieu
 
-* Lundi 9h-10h30, 11h-12h30, 14h-15h30, 16h-17h30
-* Mardi 9h-10h30, 11h-12h30, 14h-15h30, 16h-17h30
-* Mercredi 9h-10h30, 11h-12h30, 14h-15h30, 16h-17h30
-* Jeudi 9h-10h30, 11h-12h30, 14h-15h30, 16h-17h30
-
+* En présentiel salle Mirabeau
+* Sur zoom (ID de réunion : 620 6763 2226)
 
 ## Cours
 
