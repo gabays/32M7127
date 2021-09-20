@@ -1,5 +1,5 @@
 
-# Cours d'Edition numérique
+# \[32M7128\] Numériser le patrimoine (imprimés, manuscrits...): édition de texte
 
 ## Programme
 
