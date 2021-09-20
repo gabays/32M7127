@@ -32,6 +32,69 @@ Les cours ont lieu
 * `Cours_13`: La reconnaissance optique de caractères
 * `Cours_14`: Exploration textométrique
 
+### Quelques articles relatifs aux sujets abordés en cours:
+
+Philologie computationnelle
+
+```bibtex
+@article{camps_ou_2017,
+	author = {Camps, Jean-Baptiste},
+	title = {Où va la philologie numérique ?},
+	journaltitle = {Fabula LHT},
+	volume = {Le Moyen Âge pour laboratoire},
+	number = {20},
+	date = {2017},
+	url = {https://halshs.archives-ouvertes.fr/halshs-01674953/document},
+	langid = {french},
+}
+```
+
+TEI
+
+```bibtex
+@book{burnard_what_2014,
+	author = {Burnard, Lou},
+	title = {What is the Text Encoding Initiative? : How to add intelligent markup to digital resources},
+	publisher = {OpenEdition Press},
+	location = {Marseille},
+	date = {2014},
+	series = {Encyclopédie numérique},
+	url = {http://books.openedition.org/oep/426},
+	langid = {english},
+}
+```
+
+Version française:
+
+```bibtex
+@book{burnard_what_2014,
+	author = {Burnard, Lou},
+	title = {Qu’est-ce que la Text Encoding Initiative?},
+	publisher = {OpenEdition Press},
+	location = {Marseille},
+	date = {2015},
+	series = {Encyclopédie numérique},
+	url = {http://books.openedition.org/oep/1298},
+	langid = {french},
+}
+```
+
+Ecdotique
+
+```bibtex
+@article{duval_pour_2017,
+	author = {Duval, Frédéric},
+	title = {Pour des éditions numériques critiques. L’exemple des textes français},
+	journaltitle = {Médiévales. Langues, Textes, Histoire},
+	volume = {73},
+	date = {2017},
+	pages = {13--29},
+	url = {http://journals.openedition.org/medievales/8165},
+	doi = {10.4000/medievales.8165},
+	langid = {french},
+}
+```
+
 ## Logiciels
 
 Vous devez installer:
