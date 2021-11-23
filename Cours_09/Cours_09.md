@@ -139,7 +139,7 @@ Dès lors que l'apparat critique est externe, il existe deux manières de le rel
 ## _Double End-Point Attachment_
 ```xml
 <body>
-  <p>Hier, je suis allé à <anchor xml:id="lem1s"/>Genève
+  <p>Hier, je suis allé <anchor xml:id="lem1s"/>à Genève
     <anchor xml:id="lem1e"/> avec mon ami Ueli…</p>
 </body>
 <back>
