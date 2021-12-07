@@ -302,6 +302,36 @@ nomCSS.css
 
 ___
 
+### Note sur XML
+
+Il est aussi possible de styler un fichier XML avec CSS avec l'élément `<xml-stylesheet>` placé au dessus du nœud racine:
+
+
+```XML
+<?xml-stylesheet type="text/css" href="../CSS/my.css"?>
+<root>
+  <node>
+    …
+  </node>
+<root>
+```
+
+`../CSS/my.css` est ici le chemin (relatif) vers le fichier CSS:
+
+```
+DIRECTORY
+  ├── CSS
+  │    └── my.css
+  ├── JS
+  │    └── my.js
+  │
+  └── HTML
+       ├── index.html
+       └── another.html
+```
+
+___
+
 ### Quelques super-propriétés: ```font```
 - ```font-size``` pour la taille du texte
 
@@ -345,11 +375,9 @@ text-align:justify; /* valeurs: left, center, right*/
 
 - ```text-decoration``` ligne au dessus, au dessous, dessus
 ```CSS
-text-align:justify; /* valeurs: underline, overline,
+text-decoration:underline; /* valeurs: overline, dotted,
 line-through*/
 ```
-
-
 ___
 
 ### Quelques super-propriétés: ```background```
@@ -387,8 +415,8 @@ margin:16px; /* valeurs en px, Em, % */
 ```
 - Il est possible de préciser quelle marge (haut, bas, gauche…)
 ```CSS
-margin-top:16px; /* valeurs en px, Em, % */
-margin-left:16px;
+margin-right:16px; /* valeurs en px, Em, % */
+margin-bottom:16px;
 ```
 
 ---
