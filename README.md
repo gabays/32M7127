@@ -1,14 +1,19 @@
 
-# \[32M7128\] Numériser le patrimoine (imprimés, manuscrits...): édition de texte
+# \[32M7127\] Numériser le patrimoine (imprimés, manuscrits...): édition de texte
+
+* Simon Gabay
+* Genève, semestre de printemps
+
+---
+* CS: 32M7127
+* Salle: Les Philosophes 013
+* Horaire: mardi 10-12
+* GitHub: https://github.com/gabays/32M7127
+* Moodle: https://moodle.unige.ch/course/view.php?id=8258
+* Catalogue des cours: https://pgc.unige.ch/main/teachings/details/2022-32M7127
+
 
 ## Programme
-
-Les cours ont lieu
-
-* En présentiel salle Mirabeau
-* Sur zoom (ID de réunion : 620 6763 2226)
-
-## Cours
 
 * `Cours_01`: Introduction
 
@@ -19,18 +24,15 @@ Les cours ont lieu
 * `Cours_04`: Le texte augmenté (intervention et mise en page)
 * `Cours_05`: La mise en page (et les pointeurs)
 * `Cours_06`: Les Métadonnées
-* `Cours_07`: Réguler, documenter
 
 **BLOC 2: un peu plus loin**
+* `Cours_07`: Réguler, documenter
 * `Cours_08`: La correspondance manuscrite et les entités nommées
 * `Cours_09`: L'annotation critique
-* `Cours_10`: Technologies du web
-* `Cours_11`: Fouille de texte avec XPath
-* `Cours_12`: Manipulation du XML
+* `Cours_10`: Fouille de texte avec XPath
 
-**BLOC 3: production, exploitation**
-* `Cours_13`: La reconnaissance optique de caractères
-* `Cours_14`: Exploration textométrique
+**BLOC 3: manipulations**
+* `Cours_11`: Manipulation du XML
 
 ### Quelques articles relatifs aux sujets abordés en cours:
 
