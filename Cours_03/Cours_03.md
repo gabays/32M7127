@@ -1,10 +1,31 @@
-Formation Edition numérique
+---
+marp: true
+theme: default
+paginate: true
+---
 
-# Le texte
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Bibliothèques numériques, II. Editions et corpus numériques
+
+# Le XML, la TEI
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_03_images/cc-by-sa.png">
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 ---
 # Les bases
@@ -13,7 +34,7 @@ Simon Gabay
 
 Le paragraphe s'encode avec la balise `<p>`
 
-<img src="Cours_03_images/recherche_temps.jpg" width="40%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
+<img src="Cours_03_images/recherche_temps.jpg" width="30%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
 
 
 ```XML
@@ -28,8 +49,8 @@ chercher le sommeil m’éveillait ; je voulais […]</p>
 
 Pour encoder le changement de page, on utilise la balise `<pb/>`. Remarquons que cette balise est auto-fermante, pour éviter les chevauchements
 
-<img src="Cours_03_images/Princesse_cleves_1.jpg" width="22%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
-<img src="Cours_03_images/Princesse_cleves_2.jpg" width="22%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
+<img src="Cours_03_images/Princesse_cleves_1.jpg" width="16%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
+<img src="Cours_03_images/Princesse_cleves_2.jpg" width="16%" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%;"/>
 
 ```XML
 Comme il réuſſiſſoit admirablement dans tous les
@@ -131,7 +152,7 @@ Parfois on a besoin de laisser les notes dans le texte, qui n'ont tien à voir a
 ```XML
 <lg n="1" type="quatrain">
   <l n="1">Qui voudra voir une ieuneſſe prompte</l>
-  <l n="2">A ſuivre en vain l'obiect de ſon malheur,</l>
+  <l n="2">A ſuiure en vain l'obiect de ſon malheur,</l>
   <l n="3">Me vienne voir: Il voirra ma douleur,</l>
   <l n="4">Et la rigueur de l'Archer qui me donte.</l>
 </lg>
@@ -178,12 +199,12 @@ Il ne faut pas confondre un vers (`<l>`) avec un retour à la ligne (`<lb/>`)
 
 On encode les strophes avec `<lg>`. Regardez les `@attributs`.
 
-<img src="Cours_03_images/TEI_1.1_strophe.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 55%"/>
+<img src="Cours_03_images/TEI_1.1_strophe.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 35%"/>
 
 ```XML
 <lg n="1" type="quatrain">
   <l n="1">Qui voudra voir une ieuneſſe prompte</l>
-  <l n="2">A ſuivre en vain l'obiect de ſon malheur,</l>
+  <l n="2">A ſuiure en vain l'obiect de ſon malheur,</l>
   <l n="3">Me vienne voir: Il voirra ma douleur,</l>
   <l n="4">Et la rigueur de l'Archer qui me donte.</l>
 </lg>
@@ -220,7 +241,7 @@ Notons que, en TEI, il existe plusieurs manières de faire la même chose:
 ---
 ## La prise de parole
 
-<img src="Cours_03_images/TEI_1.1_sp.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 80%"/>
+<img src="Cours_03_images/TEI_1.1_sp.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 65%"/>
 
 On peut encoder les prises de paroles avec `<sp>`
 
@@ -255,7 +276,7 @@ On peut encoder le nom du personnage qui parle avec `<speaker>`
 
 Pour les didascalies, on va utiliser la balise `<stage>`
 
-<img src="Cours_03_images/TEI_1.1_didascalie.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 80%"/>
+<img src="Cours_03_images/TEI_1.1_didascalie.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 70%"/>
 
 ```XML
 <sp>

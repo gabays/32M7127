@@ -19,7 +19,7 @@ h2 {
 }
 </style>
 
-Numériser le patrimoine II: édition de texte
+Bibliothèques numériques, II. Editions et corpus numériques
 
 # Introduction à l'édition numérique
 

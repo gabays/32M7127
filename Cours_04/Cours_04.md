@@ -1,10 +1,31 @@
-Formation Edition numérique
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Bibliothèques numériques, II. Editions et corpus numériques
 
 # Le texte augmenté (intervention et mise en page)
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_04_images/cc-by-sa.png">
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 ---
 # L'Intervention éditoriale
@@ -87,7 +108,7 @@ Au cas où l'on perd de l'information lors de la correction, on peut aussi la co
 ```XML
 Pylade est un
 <choice>
-  <sic>hõme</sic>
+  <sic>home</sic>
   <corr>homme</corr>
 </choice>
 ```
@@ -103,9 +124,34 @@ Pylade <supplied>est</supplied> un homme
 # La mise en page
 
 ---
-## Analyser la page
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+</style>
+<div class="twocols">
 
-<img src="Cours_04_images/btv1b8610810z_f19_analyse.jpg" style="float: right; width: 30%"/>
+## Analyse la page
 
 Il existe un lexique pour analyser la page qu'il est utile de maîtriser (minimalement)
 
@@ -115,19 +161,55 @@ Il existe un lexique pour analyser la page qu'il est utile de maîtriser (minima
 * En violet une lettre initiale ornée
 * En bleu la signature de cahier
 
+<p class="break"></p>
+
+![right height:550px](Cours_04_images/btv1b8610810z_f19_analyse.jpg)
+</div>
+
 ---
-<img src="Cours_04_images/btv1b8610810z_f66_analyse.jpg" style="float: right; width: 30%"/>
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+</style>
+
+<div class="twocols">
 
 * En bleu nous avons le titre courant
 * En vert nous avons un cul-de-lampe de fleurons
 * En rouge la réclame (premier mot de la page suivante, située sur un nouveau cahier)
+
+<p class="break"></p>
+
+![right height:550px](Cours_04_images/btv1b8610810z_f66_analyse.jpg)
+</div>
 
 ---
 ## Elément de mise en page
 
 Tous les éléments de mise en page (titre courant, réclame, signature de cahier…) sont encodés avec la balise `<fw>`
 
-<img src="Cours_04_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 40%"/>
+<img src="Cours_04_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 25%"/>
 
 ```xml
 <sp>
@@ -143,6 +225,33 @@ Tous les éléments de mise en page (titre courant, réclame, signature de cahie
 ```
 
 ---
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+</style>
+
+
 ## Distinction des éléments de mise en page
 
 Comme l'élément `<fw>` peut encoder de nombreuses choses, il est possible de:
@@ -157,16 +266,22 @@ Comme l'élément `<fw>` peut encoder de nombreuses choses, il est possible de:
 <fw type="runningTitle" place="top-centre">TRAGEDIE</fw>
 <fw type="pageNum" place="top-right">75</fw>
 ```
-<img src="Cours_04_images/btv1b8610810z_f90_reclame.jpg" style="float: left; width: 40%"/>
 
-<img src="Cours_04_images/btv1b8610810z_f91_titre.jpg" style="float: right; width: 45%"/>
+<div class="twocols">
+
+<img src="Cours_04_images/btv1b8610810z_f90_reclame.jpg" style="float: left; width: 45%"/>
+
+<p class="break"></p>
+
+<img src="Cours_04_images/btv1b8610810z_f91_titre.jpg" style="float: right; width: 55%"/>
+</div>
 
 ---
 ## Mise en évidence
 
 Certains passages sont mis en évidence de plusieurs manières: gras, italique, majuscules, exposant… Il est possible pour cela d'utiliser la balise `<hi>`
 
-<img src="Cours_04_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 40%"/>
+<img src="Cours_04_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 35%"/>
 
 ```xml
 <speaker>ORESTE</speaker>

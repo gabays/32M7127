@@ -1,10 +1,31 @@
-Formation Edition numérique
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Bibliothèques numériques, II. Editions et corpus numériques
 
 # Le XML, la TEI
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_02_images/cc-by-sa.png">
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 ---
 ## XML
@@ -38,7 +59,7 @@ avec un `@`)
 1. Une donnée est enfermée entre deux balises. Pour nous il s’agit de parties, de chapitres, de paragraphes, de phrases, de mots, de caractères...
 2. Les données sont "emboîtées" les unes dans les autres : un document contient des paragraphes, qui contiennent des phrases, qui contiennent des mots...
 
-<img src="Cours_02_images/PoupeesRusses.jpg" width="40%"/>
+<img src="Cours_02_images/PoupeesRusses.jpg" width="35%"/>
 
 
 3. On transforme ainsi le texte en base de données.
@@ -54,7 +75,7 @@ On retourne à la ligne pour un nouveau paragraphe.
 
 Structure sous-jacente:
 
-<img src="Cours_02_images/arbor0.png" width="70%"/>
+<img src="Cours_02_images/arbor0.png" width="50%"/>
 
 ---
 
@@ -121,7 +142,7 @@ Il existe d’autres vocabulaires XML que la TEI, comme
 - le TMX (_Translation Memory eXchange_)
 
 Ces vocabulaires peuvent d’ailleurs être exprimés avec d’autres langages (comme RDF-DC en turtle).
-􏰀Pour cette raison, on parle de XML-TEI, (ainsi il a existé un SGML-TEI).
+Pour cette raison, on parle de XML-TEI, (ainsi il a existé un SGML-TEI).
 
 ---
 
