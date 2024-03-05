@@ -1,14 +1,35 @@
-Formation Edition numérique
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Numériser le patrimoine II: édition de texte
 
 # Introduction à l'édition numérique
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_01_images/cc-by-sa.png">
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 
 ---
-# Grands principes
+# De la philologie (ecdotique)
 ---
 ## La philologie
 
@@ -18,62 +39,22 @@ Faire de l'édition numérique, c'est donc avant tout faire de l'édition, et do
 
 On connaît des éditions conservatrices ou interventionnistes, diplomatiques ou interprétatives: il faut être capable de choisir.
 
----
-![19% center](Cours_01_images/btv1b8610810z_f19.jpg)
+Prenons l'exemple de la page suivante: comment l'éditer?
 
 ---
 
-![!100% center](Cours_01_images/conseils_edition.jpg)
+## Un cas "simple"
 
----
-## Les droits
-
-On utilise des licences qui permettent de protéger son travail, et de respecter celui des autres. Est-ce que je peux:
-* Vendre des données en ligne?
-* Modifier les transcriptions que j'ai trouvées?
-* Diffuser des documents sans indiquer la source?
-* Diffuser ces documents sous une autre forme que je les ai trouvés?
-
-Il existe plusieurs systèmes:
-* Creative commons
-* Etalab
-* MIT
-* …
+![w:300 center](Cours_01_images/btv1b8610810z_f19.jpg)
 
 ---
 
-![38% center](Cours_01_images/Creative_commons_license_spectrum_fr.png)
+## Une solution
 
----
-## Les enjeux
-
-L'_open science_
-
-* _open access_: ![2%](Cours_01_images/open_access.png)
-* _open source_: ![3%](Cours_01_images/open_source.png)
-* _open data_: ![10%](Cours_01_images/open_data.png)
-
----
-
-![250% center](Cours_01_images/FAIR.png)
+![w:400 center](Cours_01_images/conseils_edition.jpg)
 
 ---
 # Chaîne de traitement
----
-## Chaîne de traitement
-
-On parle de chaîne de traitement (ou "flux de travail" selon la Commission générale de terminologie et de néologie) ou de _workflow_.
-Comme aucune solution informatique ne permet de tout faire (à l'inverse de logiciel comme _Word_ en bureautique), il faut trouver
-1. Une série de solutions…
-2. … qui s'articulent correctement les unes avec les autres…
-3. … et qui correspondent à des standards.
-
----
-### Un exemple de chaîne de traitement pour l'édition numérique
-
-![50% center](Cours_01_images/Workflow.jpg)
-
-Source: Christof Schöch, _Digitale Textedition mit TEI_, [en ligne](https://de.dariah.eu/tei-tutorial).
 
 ---
 ### Philologie numérique
@@ -85,92 +66,138 @@ Retour à la renaissance, ou, comme Alde Manuce, l'humaniste maîtrise l'intégr
 L'édition numérique est avant tout une édition, et nécessite des compétences en ecdotique traditionnelle.
 
 ---
-### Quelques grandes étapes
+## Chaîne de traitement
 
-1. Transcription -> Kraken, Ocropy, Tesseract…
-2. Collation -> Collatex, Juxta…
-3. Analyse paléographique -> Archetype…
-4. Annotation linguistique -> TreeTagger, Marmot, Pie…
-5. Exploitation linguistique -> TXM, Unitex/GramLab…
-6. Exploitation littéraire -> Pour les emprunts: Tracer ou Philologic
-7. Indexation -> HER, GROBID entity fishing…
-8. Publication -> TEIPublisher, Synoptix, LaTeX
-9. Archivage -> HAL, Huma-num
+On parle de chaîne de traitement (ou "flux de travail" selon la Commission générale de terminologie et de néologie) ou de _workflow_.
+Comme aucune solution informatique ne permet de tout faire (à l'inverse de logiciel comme _Word_ en bureautique), il faut trouver
+1. Une série de solutions…
+2. … qui s'articulent correctement les unes avec les autres…
+3. … et qui correspondent à des standards.
 
 ---
-### Pourquoi dois-je (presque) tout faire?
+## Un exemple de chaîne de traitement pour l'édition numérique
 
-L'objectif d'avoir un équivalent de _Word_ n'est pas nécessairement souhaitable. Toute simplification se paye:
-- Au sens propre avec l'apparition de solutions privées, donc payantes.
-- Au sens figuré, avec l'enfermement dans une solution générale qui gère mal les cas particuliers.
+![w:900 center](Cours_01_images/Workflow.jpg)
 
-Cependant, il existe déjà des chaînes de traitement fonctionnelles et de très grande qualité, comme [METOPES](http://www.numedif.fr/metopes.html) à l'université de Caen.
+Source: Christof Schöch, _Digitale Textedition mit TEI_, [en ligne](https://de.dariah.eu/tei-tutorial).
 
 ---
-### Quelques grands principes
+## Encoder
 
-1. Ouvert
-2. Pérenne
-3. Interopérable
----
-### Un exemple d'enchaînement
+Il va falloir encoder en respectant les règles de la TEI:
 
-![50% center](Cours_01_images/Workflow_2.jpg)
-
----
-### Récupération des données
-
-Le site [Dramacode](http://dramacode.github.io/) publie en ligne les transcriptions en XML-TEI
-
-![50% center](Cours_01_images/Workflow_2_dramacode.png)
-
----
-### La TEI
-
-![80% center](Cours_01_images/Workflow_2_TEI.png)
-
----
-### Traitement avec XSLT
-
-![100% center](Cours_01_images/Workflow_2_XSLT.png)
-
----
-### Texte nettoyé
-
-![100% center](Cours_01_images/Workflow_2_txt.png)
+```xml
+<div type="act" n="II" xml:id="II"><head>Acte II</head>
+   <div type="scene" n="2" xml:id="II2"><head>Scène 2</head>
+     <sp><speaker>Rodrigue</speaker>
+         <l part="I">À moi, comte, deux mots.</l></sp>
+     <sp><speaker>Comte</speaker>
+         <l part="M">Parle</l></sp>
+     <sp><speaker>Rodrique</speaker>
+         <l part="F">Ôte-moi d'un doute</l></sp>
+     <sp><speaker>Comte</speaker>
+         <l part="I">Connais-tu bien Don Diègue ?</l></sp>
+     <sp><speaker>Comte</speaker>
+         <l part="M">Oui</l></sp>
+     <sp><speaker>Rodrigue</speaker>
+       <l part="F">Parlons bas, écoute.</l>
+       <l>Sais-tu que ce vieillard fut la même vertu,</l>
+       <l>La vaillance et l'honneur de son temps ? Le sais-tu ?</l></sp>
+    ...
+   </div>
+ ...
+ </div>
+ ```
 
 ---
-### Texte nettoyé
+## Collationner
 
-![100% center](Cours_01_images/Workflow_2_txt.png)
+On peut avoir différentes version d'un même texte. Comme il  n'en faut qu'une seule, il va falloir collationner les différentes versions:
 
----
-### Texte annoté
-
-![100% center](Cours_01_images/Workflow_2_gaz.png)
-
----
-### Calcul des scores par pièce
-
-![100% center](Cours_01_images/Workflow_2_scores.png)
+| A | The | quick | brown fox jumps over the | -    | dog. |
+|---|-----|-------|--------------------------|------|------|
+| B | The | -     | brown fox jumps over the | lazy | dog. |
 
 ---
-### Géoréférencement
+## Documenter
 
-![100% center](Cours_01_images/Workflow_2_geo.png)
+Il est fondamental de documenter ses choix: quelles balises a-t-on utilisé? Pourquoi? Pour cela on utiliser un ODD (_One document does it all_).
+```xml
+<schemaSpec ident="T​BEcustom" start="T​EI" prefix="tei_" targetLang="en" docLang="en">
+<!-- required minimal header elements -->
+<moduleRef key="header" include="tei​Header file​Desc title​Stmt publication​Stmt source​Desc"/>
+<!-- required core elements (p and title for use in titleStmt) -->
+<moduleRef key="core" include="p title"/>
+<!-- required textstructure elements (TEI, text, and body) -->
+<moduleRef key="textstructure" include="T​EI text body"/>
+<!-- required module tei instantiates lots of classes used for further expansion of this odd -->
+<moduleRef key="tei"/>
+</schemaSpec>
+```
 
 ---
-### Traitement
+## Contrôler
 
-![100% center](Cours_01_images/Workflow_2_r.png)
+Il est fondamental de contrôler la cohérence du code en utilisant un schéma. Il existe une multitude de schéma pour le XML
+
+```xml
+
+  <?xml version="1.0" encoding="UTF-8"?>
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personne">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="nom" type="xs:string" />
+          <xs:element name="prenom" type="xs:string" />
+          <xs:element name="date_naissance" type="xs:date" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  ```
+
+  ---
+
+## Manipuler 1
+
+On _encode_ en TEI, on _programme_ en XSLT (ou en Pyhton, ou en R)
+
+```xml
+<xsl:stylesheet version="1.0"
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:Det="http://Det.com">
+
+ <xsl:output omit-xml-declaration="yes"/>
+
+    <xsl:template match="node()|@*">
+      <xsl:copy>
+         <xsl:apply-templates select="node()|@*"/>
+      </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="Det:EmpExperience"/>
+</xsl:stylesheet>
+```
 
 ---
-### Publication
 
-![100% center](Cours_01_images/Workflow_2_map.png)
+## Manipuler 2
+
+On peut utiliser un autre langage spécifique au XML: le xQuery
+
+```xquery
+for $x in doc("books.xml")/bookstore/book
+where $x/price>30
+order by $x/title
+return $x/title
+```
 
 ---
-### Analyse: Racine vs Scarron
 
-![100% center](Cours_01_images/Workflow_2_RacScar.png)
+## Publier
+
+xQuery est notamment utilsé par TEI publisher. Un bon exemple est celui du projet _Démêler le cordel_:
+
+https://desenrollandoelcordel.unige.ch/
+
+
 
