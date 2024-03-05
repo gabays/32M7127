@@ -1,10 +1,31 @@
-Formation Edition numérique
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Bibliothèques numériques, II. Editions et corpus numériques
 
 # La mise en page (et les pointeurs)
 
 Simon Gabay
 
-<img style="float: right; width: 20%;" src="Cours_05_images/cc-by-sa.png">
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 ---
 # L'image
@@ -70,6 +91,34 @@ DOSSIER
 * Il est possible de "remonter" l'arbre en utilisant `../` pour chaque niveau: la position de `fichier.xml` par rapport à `mon.css` est ainsi `../../fichier.xml`
 
 ---
+
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+</style>
+
+
 ## Encoder l'image
 
 Nous pouvons avoir besoin d'encoder un morceau de page directement dans le texte. C'est notamment le cas avec une initiale: on peut alors découper l'image (appelons le fichier `initiale.jpg`), et pointer vers cet extrait dans le code avec la balise `<graphic>`
@@ -85,16 +134,21 @@ Nous pouvons avoir besoin d'encoder un morceau de page directement dans le texte
 <lb/>Depuis qu'elle a pris ſoin de nous rejoindre ici.
 ```
 
+<div class="twocols">
+
 <img src="Cours_05_images/btv1b8610810z_f19_cahier.jpg" style="float: left; width: 35%"/>
 
+<p class="break"></p>
+
 <img src="Cours_05_images/btv1b8610810z_f19_initiale.jpg" style="float: right; width: 21%"/>
+</div>
 
 ---
 ## Encoder un peu plus que l'image
 
 Il est possible de faire un peu mieux que l'utilisation de `<graphic>` en y associant une légende avec `<figDesc>`. On regroupe alors le tout dans `<figure>`.
 
-<img src="Cours_05_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 40%"/>
+<img src="Cours_05_images/btv1b8610810z_f19_cahier.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-bottom: 3%; width: 35%"/>
 
 ```xml
 <speaker rend="center">ORESTE.</speaker>
@@ -106,17 +160,51 @@ Il est possible de faire un peu mieux que l'utilisation de `<graphic>` en y asso
 <lb/>Ma Fortune va prendre vne …
 ```
 ---
+
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+</style>
+
+<div class="twocols">
+
 ## Dans la page
 
-<img src="Cours_05_images/btv1b8610810z_f19_analyse.jpg" style="float: right; width: 30%"/>
+![right height:400px](Cours_05_images/btv1b8610810z_f19_analyse.jpg)
 
-Plutôt qu'à la page complète, on peut avoir besoin de faire référence à une partie de la page uniquement: le bandeau, la frise, l'initiale… On va donc:
+Plutôt qu'à la page complète, on peut avoir besoin de faire référence à une partie de la page uniquement: le bandeau, la frise, l'initiale… 
+
+<p class="break"></p>
+
+On va donc:
 
 * Regrouper tous les chemins vers les images dans une balise `<facsimile>` (qui rappelle l'attribut `@facs`)
 * Regrouper tout ce qui est relatif à une même page dans une balise `<surface>`.
 * Distinguer l'image entière, qui est dans `<graphic>`
 * et des zones de cette image dans une balise `<zone>`
 * Ces zones sont définies par des coordonnées
+</div>
 
 ---
 
